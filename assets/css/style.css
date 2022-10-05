@@ -1,0 +1,84 @@
+/*---------------------------------------------------------------------------------
+                    
+                    - All css stuf
+                    - made by Sylvain Adande : web developer
+
+---------------------------------------------------------------------------------*/
+
+/*----------------------
+    ROADMAP : 
+    =========
+    0-Include all stuf needed
+    1-reset css
+    2-varibles css
+    2-default css
+
+-----------------------*/
+
+/*----------------------
+       0- Including
+-----------------------*/
+@import url('./animations.css');
+@import url('./responsive.css');
+
+
+/*----------------------
+       1- RESET CSS
+-----------------------*/
+
+*,::after,::before{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/*----------------------
+        VARIABLES CSS
+-----------------------*/
+
+:root{
+
+    /*  COLORS */
+    --white-color:#ffffff;
+    --black-color:#ffffff;
+    --first-color:#51e2f5;
+    --second-color:#9df9ef;
+    --third-color: #edf756;
+    --fourth-color: #ffa8B6;
+    --last-color: #a28089;
+    --bg-color: #2a2a2a;
+    --border-color:#e7d8d8;
+
+    /* FONT WEIGHT */
+    --fw-300 : 300;
+    --fw-300 : 400;
+    --fw-300 : 500;
+    --fw-300 : 600;
+    --fw-300 : 700;
+    --fw-300 : 800;
+
+    /*  BORDER RADIUS */
+    --br-sm : 10px;
+    --br-md : 30px;
+    --br-lg : 50px;
+
+    /*  FONT FAMILY */
+
+    --ff-poppins : "Poppins";
+
+}
+
+
+
+/*----------------------
+    2- DEFAULT CSS
+-----------------------*/
+
+html{
+    font-size:26px;
+}
+
+body{
+    font-family : var(--ff-poppins),cursive;
+}
+

@@ -2,23 +2,23 @@
 <html lang="en">
 
 <head>
-    <title></title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Bulbiere - Acceuil</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- All css styles -->
-    <link href="./assets/css/animation.css" rel="stylesheet">
-    <link href="./assets/css/style.css" rel="stylesheet">
-    <link href="./assets/css/responsive.css" rel="stylesheet">
+        <!-- All css styles -->
+        <link href="./assets/css/animation.css" rel="stylesheet">
+        <link href="./assets/css/style.css" rel="stylesheet">
+        <link href="./assets/css/responsive.css" rel="stylesheet">
 
-    <!-- all font css  -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,400;0,700;0,900;1,100;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
-        rel="stylesheet">
+        <!-- all font css  -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,400;0,700;0,900;1,100;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+                rel="stylesheet">
 
-    <!-- remix icon -->
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+        <!-- remix icon -->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
 
 </head>
 
@@ -29,24 +29,200 @@
                 <!-- header -->
                 <div class="header-top">
                         <div class="container">
-                                <div class="wrapper">
-                                        <div class="left">
+                                <div class="wrapper flexitem">
+                                        <div class="left flexitem">
                                                 <i class="ri-cellphone-line"></i>
                                                 <span class="hotline">123-456-7890</span>
                                         </div>
-                                        <div class="right"></div>
+                                        <div class="right">
+                                                <ul class="flexitem">Devise :
+                                                        <li class="active"><a href="">USD</a></li>
+                                                        <li> <a href="">EUR</a></li>
+                                                        <li><a href="">XOF</a></li>
+                                                </ul>
+                                                <ul class="flexitem">
+                                                        <li>
+
+                                                                <a href="">
+                                                                        <i class="ri-sound-module-line"></i>
+                                                                        Comparer
+                                                                </a>
+                                                        </li>
+                                                </ul>
+                                                <ul class="flexitem">
+                                                        <li>
+                                                                <a href="">
+                                                                        <i class="ri-user-6-line"></i>
+                                                                        Connexion
+                                                                </a>
+                                                        </li>
+                                                </ul>
+                                        </div>
+                                </div>
+                        </div>
+                </div> <!-- End header top -->
+
+                <!-- header search -->
+                <div class="header-search">
+                        <div class="container">
+                                <div class="wrapper flexitem">
+                                        <div class="left flexitem">
+                                                <div class="logo-image">
+                                                        <i class="ri-store-3-line"></i>
+                                                </div>
+                                                <div class="logo-text flexitem">
+                                                        <h1>Bulbiere</h1>
+                                                        <h2>market</h2>
+                                                </div>
+                                        </div>
+                                        <div class="center">
+                                                <form action="" method="post" class="search-form">
+                                                        <select name="categorie">
+                                                                <option>TOUT</option>
+                                                                <option>television</option>
+                                                                <option>mobile</option>
+                                                                <option>casque</option>
+                                                                <option>montres</option>
+                                                        </select>
+                                                        <input placeholder="Rechercher un produit ici" name="search" />
+                                                        <i class="ri-search-line"></i>
+                                                </form>
+
+                                        </div>
+                                        <div class="right flexitem">
+                                                <i class="ri-phone-line"></i>
+                                                <span>123-456-7890</span>
+                                        </div>
+                                </div>
+                        </div>
+                </div> <!-- end header search -->
+
+                <!-- header main -->
+                <div class="header-main">
+                        <div class="container">
+                                <div class="wrapper flexitem">
+                                        <div class="left flexitem">
+                                                <div class="cat-head flexitem">
+                                                        <i class="ri-menu-unfold-line"></i>
+                                                        <h3>toutes categories</h3>
+                                                </div>
+                                                <div class="cat-content flexitem">
+                                                        <ul class="cat-list flexitem">
+                                                                <li>
+                                                                        <a href="">
+                                                                                <i class="ri-tv-line"></i>
+                                                                                <span>television</span>
+                                                                                <i class="ri-arrow-right-s-line"></i>
+
+                                                                        </a>
+
+                                                                        <div class="sub-item-content">
+                                                                                <a href="">tv lg</a>
+                                                                                <a href="">tv beko</a>
+                                                                                <a href="">tv tesla</a>
+                                                                                <a href="">tv nexflix</a>
+
+                                                                        </div>
+                                                                </li>
+                                                                <li><a href="">
+                                                                                <i class="ri-phone-line"></i>
+                                                                                <span>mobile</span>
+                                                                                <i class="ri-arrow-right-s-line"></i>
+                                                                        </a>
+                                                                        <div class="sub-item-content">
+                                                                                <a href="">iphone</a>
+                                                                                <a href="">oppo</a>
+                                                                                <a href="">samsumg</a>
+                                                                                <a href="">teckno</a>
+
+                                                                        </div>
+                                                                </li>
+                                                                <li>
+                                                                        <a href="">
+                                                                                <i class="ri-headphone-line"></i>
+                                                                                <span>casques</span>
+                                                                                <i class="ri-arrow-right-s-line"></i>
+                                                                        </a>
+                                                                        <div class="sub-item-content">
+                                                                                <a href="">casque astro</a>
+                                                                                <a href="">casque sony</a>
+                                                                                <a href="">casque lg</a>
+                                                                                <a href="">casque nokia</a>
+                                                                        </div>
+
+                                                                </li>
+                                                                <li><a href="">
+                                                                                <i class="ri-timer-line"></i>
+                                                                                <span>montres</span>
+
+                                                                        </a></li>
+                                                                <li><a href="">
+                                                                                <i class="ri-gamepad-line"></i>
+                                                                                <span>jeux vidéos</span>
+
+                                                                        </a></li>
+                                                                <li><a href="">
+                                                                                <i class="ri-camera-line"></i>
+                                                                                <span>camera</span>
+
+                                                                        </a></li>
+                                                                <li><a href="">
+                                                                                <i class="ri-music-line"></i>
+                                                                                <span>audio</span>
+
+                                                                        </a></li>
+                                                                <li><a href="">
+                                                                                <i class="ri-stack-line"></i>
+                                                                                <span>accesoires</span>
+
+                                                                        </a></li>
+                                                                <li><a href="">
+                                                                                <span>plus de catégories</span>
+                                                                                <i class="ri-add-line"></i>
+                                                                        </a></li>
+                                                        </ul>
+                                                </div>
+                                        </div>
+                                        <div class="center">
+                                                <nav>
+                                                        <ul class="flexitem">
+                                                                <li><a href="#">Acceuil</a></li>
+                                                                <li><a href="#">produits</a></li>
+                                                                <li><a class="flexitem" href="#"><span>boutique</span> 
+                                                                        <i class="ri-arrow-down-s-line"></i>
+                                                                </a>
+                                                                <div class="sub-item-content">
+                                                                        <a href="">produit par categorie</a>
+                                                                        <a href="">marques</a>
+                                                                </div>
+                                                        </li>
+                                                                <li><a href="#">blog</a></li>
+                                                                <li><a href="#">contact</a></li>
+                                                        </ul>
+                                                </nav>
+                                        </div>
+                                        <div class="right">
+                                                <div class="badge">
+                                                        <i class="ri-heart-line"></i>
+                                                        <span>0</span>
+                                                </div>
+                                                <div class="badge">
+                                                        <i class="ri-shopping-cart-line"></i>
+                                                        <span>0</span>
+                                                </div>
+                                        </div>
                                 </div>
                         </div>
                 </div>
-                
+
                 <!-- main -->
-                
-                
+
+
                 <!-- footer -->
 
 
         </div>
-                
+
 </body>
-        
+
 </html>

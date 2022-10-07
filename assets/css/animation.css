@@ -4,7 +4,28 @@
 /*-----------------------------------------*/
 
 
-@keyframes growDown {
+@keyframes moveFromBottom {
+    from {
+        opacity: 0;
+        transform: translateY(200%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+
+@keyframes left_to_right {
+    from {
+        opacity: 0;
+        transform: translateX(-200%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+  @keyframes growDown {
     0% {
         transform: scaleY(0)
     }

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
         <title>Bulbiere - Acceuil</title>
@@ -22,7 +22,6 @@
 
         <!-- slider swipper cdn -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
-
 
 </head>
 
@@ -212,20 +211,76 @@
                                                                 <i class="ri-heart-line"></i>
                                                                 <span>0</span>
                                                         </div>
-                                                        <div class="badge">
+                                                        <div class="badge checkout-badge">
                                                                 <i class="ri-shopping-cart-line"></i>
                                                                 <span>0</span>
+                                                                <div class="cart flex-column">
+                                                                        <div class="flex-row wrap products-list">
+                                                                                <div  class="flex-row product-item justify-content-between full-width p-20">
+                                                                                        <img width="100" height="100" src="./assets/images/products/shoe1.jpg" alt="">
+                                                                                        <div class="flex-column">
+                                                                                                <div class="flex-row justify-space-between">
+                                                                                                        <p>nike blade </p>
+                                                                                                </div>
+                                                                                                <small>(Color: Black, Size: XL)</small>
+                                                                                                <p>1 x 54.00 €</p>
+                                                                                        </div>
+                                                                                        <i onclick="removeListItem(this);" class="ri-close-line"></i>
+                                                                                </div>
+                                                                                <div class="flex-row product-item justify-content-between full-width p-20">
+                                                                                        <img width="100" height="100" src="./assets/images/products/electronic1.jpg" alt="">
+                                                                                        <div class="flex-column">
+                                                                                                <div class="flex-row justify-content-between">
+                                                                                                        <p>smasung smart tv</p>
+                                                                                                </div>
+                                                                                                <small>(Color: Black, Size: XL)</small>
+                                                                                                <p>1 x 54.00 €</p>
+                                                                                        </div>
+                                                                                        <i onclick="removeListItem(this);" class="ri-close-line"></i>
+                                                                                </div><div  class="flex-row product-item justify-content-between full-width p-20">
+                                                                                        <img width="100" height="100" src="./assets/images/products/electronic4.jpg" alt="">
+                                                                                        <div class="flex-column">
+                                                                                                <div class="flex-row justify-content-between">
+                                                                                                        <p>cable usb</p>
+                                                                                                </div>
+                                                                                                <small>(Color: Black, Size: XL)</small>
+                                                                                                <p>1 x 4.00 €</p>
+                                                                                        </div>
+                                                                                        <i onclick="removeListItem(this);" class="ri-close-line"></i>
+                                                                                </div>
+                                                                        </div>
+                                                                        <div class="flex-column summary  p-20">
+                                                                                <p class="flex-row align-items-center">
+                                                                                        <strong>Sous-total:</strong>
+                                                                                        <small class="m-l-auto">175.00€</small>
+                                                                                </p>
+                                                                                <p class="flex-row align-items-center">
+                                                                                        <strong>Tax:</strong>
+                                                                                        <small class="m-l-auto">17.50€</small>
+                                                                                </p>
+                                                                                <p class="flex-row align-items-center">
+                                                                                        <strong>Total:</strong>
+                                                                                        <strong class="m-l-auto">192.5€</strong>
+                                                                                </p>
+                                                                        </div>
+                                                                        <div class="flex-row btn-actions  p-20 justify-content-around">
+                                                                                <a href="" class="btn btn-animed1 check">
+                                                                                        voir le panier
+                                                                                </a>
+                                                                                <a href="" class="btn btn-animed1 checkout">
+                                                                                        payer
+                                                                                </a>
+                                                                        </div>
+                                                                </div>
                                                         </div>
                                                 </div>
                                         </div>
                                 </div>
                         </div>
                         <!-- end of header  main-->
-                        
                 </header>
 
                 <main>
-                        <!-- carousel -->
                         <div class="carousel">
                                         <div class="container">
 
@@ -288,10 +343,228 @@
                                                         </div> <!-- Slider main container -->
                                                 </div>
                                         </div>
-                        </div><!--end of carousel -->
+                        </div>
+                        <!--end of carousel -->
+
+                        <div class="brands">
+                                <div class="container">
+                                        <div class="wrapper flexitem">
+                                                <div class="item">
+                                                        <a href="">
+                                                                <img src="./assets/images/brands/asus.png" alt="">
+                                                        </a>
+                                                </div><div class="item">
+                                                        <a href="">
+                                                                <img src="./assets/images/brands/dng.png" alt="">
+                                                        </a>
+                                                </div><div class="item">
+                                                        <a href="">
+                                                                <img src="./assets/images/brands/hurley.png" alt="">
+                                                        </a>
+                                                </div><div class="item">
+                                                        <a href="">
+                                                                <img src="./assets/images/brands/oppo.png" alt="">
+                                                        </a>
+                                                </div><div class="item">
+                                                        <a href="">
+                                                                <img src="./assets/images/brands/samsung.png" alt="">
+                                                        </a>
+                                                </div><div class="item">
+                                                        <a href="">
+                                                                <img src="./assets/images/brands/zara.png" alt="">
+                                                        </a>
+                                                </div>
+                                        </div>
+                                </div>
+                        </div>
+                        <!-- end of brands -->
+
+                        <div class="trendings">
+                                <div class="container">
+                                        <div class="wrapper flex-column">
+                                                <div class="head flex-row justify-content-between">
+                                                        
+                                                        <h2>produits tendances</h2>
+                                                        <a href="">voir tout</a>
+                                                </div>
+
+                                               
+                                                
+                                                <div class="content flex-column align-items-center">
+
+                                                
+                                                        <div  id="products"  class="products wrapper flex-row p-t-20">
+
+                                                                <div class="item">
+                                                                        <div class="image">
+                                                                                <img src="./assets/images/products/shoe1.jpg">
+                                                                                <ul class="btn-actions">
+                                                                                        <li>
+                                                                                                <a onclick="addFillCss(this);" href="javascript:void(0);"> 
+                                                                                                <i class="ri-restart-line">
+                                                                                                        
+                                                                                                </i>
+                                                                                                </a>
+                                                                                        </li>
+
+                                                                                        <li><a href=""> <i class="ri-shuffle-line"></i></a></li>
+
+                                                                                        <li><a href=""> <i class="ri-search-line"></i></a></li>
+
+                                                                                        <li><a href=""> <i class="ri-heart-line"></i></a></li>
+                                                                                </ul>
+                                                                        </div>
+                                                                        
+                                                                        <div class="content">
+                                                                                <h2>tamaris</h2>
+                                                                                <div class="flex-row justify-content-between">
+                                                                                      <span>100.80$</span>
+                                                                                      <del>129$</del>
+                                                                                      <small class="off">-16% off</small>
+                                                                                </div>
+                                                                                <div>
+                                                                                    <i class="fill ri-star-fill"></i>    
+                                                                                    <i class="fill ri-star-fill"></i>    
+                                                                                    <i class="fill ri-star-fill"></i>    
+                                                                                    <i class="ri-star-fill"></i>    
+                                                                                    <i class="ri-star-fill"></i>    
+                                                                                </div>
+                                                                        </div>
+                                                                        
+                                                                </div> 
+
+                                                                <div class="item">
+                                                                        <div class="image">
+                                                                                <img src="./assets/images/products/shoe2.jpg">
+                                                                                <ul class="btn-actions">
+                                                                                        <li><a href=""> <i class="ri-shopping-cart-line"></i></a></li>
+
+                                                                                        <li><a href="#"> <i class="ri-shuffle-line"></i></a></li>
+
+                                                                                        <li><a href="#"> <i class="ri-search-line"></i></a></li>
+
+                                                                                        <li><a href="#"> <i class="ri-heart-line"></i></a></li>
+                                                                                </ul>
+                                                                        </div>
+                                                                        
+                                                                        <div class="content">
+                                                                                <h2>victoria</h2>
+                                                                                <div class="flex-row justify-content-between">
+                                                                                      <span>100.70$</span>
+                                                                                      <del>129$</del>
+                                                                                      <small class="off">-16% off</small>
+                                                                                </div>
+                                                                                <div>
+                                                                                    <i class="fill ri-star-fill"></i>    
+                                                                                    <i class="fill ri-star-fill"></i>    
+                                                                                    <i class="fill ri-star-fill"></i>    
+                                                                                    <i class="ri-star-fill"></i>    
+                                                                                    <i class="ri-star-fill"></i>    
+                                                                                </div>
+                                                                        </div>
+                                                                </div> 
+
+                                                                <div class="item">
+                                                                                
+                                                                        <div class="image">
+                                                                                
+                                                                                <img src="./assets/images/products/shoe3.jpg">
+                                                                                <ul class="btn-actions">
+                                                                                        <li><a href=""> <i class="ri-shopping-cart-line"></i></a></li>
+
+                                                                                        <li><a href=""> <i class="ri-shuffle-line"></i></a></li>
+
+                                                                                        <li><a href=""> <i class="ri-search-line"></i></a></li>
+
+                                                                                        <li><a href=""> <i class="ri-heart-line"></i></a></li>
+                                                                                </ul>
+                                                                        </div>
+                                                                        
+                                                                        <div class="content">
+                                                                                <h2>veja</h2>
+                                                                                <div class="flex-row justify-content-between">
+                                                                                      <span>100.06$</span>
+                                                                                      <del>129$</del>
+                                                                                      <small class="off">-16% off</small>
+                                                                                </div>
+                                                                                <div>
+                                                                                    <i class="fill ri-star-fill"></i>    
+                                                                                    <i class="ri-star-fill"></i>    
+                                                                                    <i class="ri-star-fill"></i>    
+                                                                                    <i class="ri-star-fill"></i>    
+                                                                                    <i class="ri-star-fill"></i>    
+                                                                                </div>
+                                                                        </div>
+                                                                </div> 
+
+                                                                <div class="item">
+                                                                        <div class="image">
+                                                                                <img src="./assets/images/products/shoe4.jpg">
+                                                                                <ul class="btn-actions">
+                                                                                        <li><a href=""> <i class="ri-shopping-cart-line"></i></a></li>
+
+                                                                                        <li><a href=""> <i class="ri-shuffle-line"></i></a></li>
+
+                                                                                        <li><a href=""> <i class="ri-search-line"></i></a></li>
+
+                                                                                        <li><a href=""> <i class="ri-heart-line"></i></a></li>
+                                                                                </ul>
+                                                                        </div>
+                                                                        
+                                                                        <div class="content">
+                                                                                <h2>converse</h2>
+                                                                                <div class="flex-row justify-content-between">
+                                                                                      <span>100.50$</span>
+                                                                                      <del>129$</del>
+                                                                                      <small class="off">-16% off</small>
+                                                                                </div>
+                                                                                <div>
+                                                                                    <i class="fill ri-star-fill"></i>    
+                                                                                    <i class="fill ri-star-fill"></i>    
+                                                                                    <i class="ri-star-fill"></i>    
+                                                                                    <i class="ri-star-fill"></i>    
+                                                                                    <i class="ri-star-fill"></i>    
+                                                                                </div>
+                                                                        </div>
+                                                                </div>  
+
+                                                               
+                                                        </div>
+
+                                                        <div class="arrows">
+                                                            <ul class="flex-row">
+                                                                    <li>
+                                                                            <p>
+                                                                        
+                                                                            <i class="ri-arrow-left-line"></i>
+                                                                            </p>
+                                                                    </li>
+
+                                                                    <li>
+                                                                            <p>1</p>
+                                                                    </li><li>
+                                                                            <p>2</p>
+                                                                    </li>
+
+                                                                    <li>
+                                                                           <p>
+                                                                                   
+                                                                            <i class="ri-arrow-right-line"></i>
+                                                                           </p>
+                                                                    </li>
+                                                            </ul>  
+                                                        </div>
+
+                                                       
+                                                </div>
+                                        </div>
+                                </div>
+                        </div>
+                        <!-- end of trendings -->
+
+
+                        
                 </main>
-
-
 
                 <!-- footer -->
 

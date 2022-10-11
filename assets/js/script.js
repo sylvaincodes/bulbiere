@@ -53,35 +53,25 @@ function addFillCss(e) {
 }
 
 /* 
-    * scroll to the left the trending product
-    * home page
-    
+    * show the header fixed while scrolling
+    * home page    
 */
-/*
-const slider = document.querySelector('.products');
-let isDown = false;
-let startX;
-let scrollLeft;
 
-slider.addEventListener('mousedown', (e) => {
-  isDown = true;
-  slider.classList.add('active');
-  startX = e.pageX - slider.offsetLeft;
-  scrollLeft = slider.scrollLeft;
-});
-slider.addEventListener('mouseleave', () => {
-  isDown = false;
-  slider.classList.remove('active');
-});
-slider.addEventListener('mouseup', () => {
-  isDown = false;
-  slider.classList.remove('active');
-});
-slider.addEventListener('mousemove', (e) => {
-  if(!isDown) return;
-  e.preventDefault();
-  const x = e.pageX - slider.offsetLeft;
-  const walk = (x - startX) * 3; //scroll-fast
-  slider.scrollLeft = scrollLeft - walk;
-  console.log(walk);
-});*/
+// Get the header
+var header = document.getElementById("myHeader");
+var fixedHeader = document.getElementById("fixedHeader");
+
+// Get the offset position of the navbar
+var position = header.offsetTop;
+
+
+window.onscroll = function(){
+  if (window.pageYOffset > position) {
+      fixedHeader.style.visibility = 'visible';
+    }else{
+      
+      fixedHeader.style.animation = 'moveFromTop 600ms ease';
+      fixedHeader.style.visibility = 'hidden';
+  }
+}
+

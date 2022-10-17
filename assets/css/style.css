@@ -134,6 +134,27 @@ h1,h2,h3,h4,h5,h6{
     overflow: hidden;
 }
 
+.btn-icon{
+    background:var(--black-color);
+    color:var(--white-color);
+    border-radius:20px;
+    padding:10px!important;
+    cursor:pointer;
+    margin-right:10px !important;
+}
+
+.btn-icon:hover{
+    background:var(--first-color);
+    color:var(--white-color);
+}
+
+h1,h2,h3,h4,h5,h6{
+    text-transform:capitalize;
+    font-weight:var(--fw-400);
+}
+
+
+
 .flex-column{
     display: flex;
     flex-direction: column;
@@ -147,7 +168,14 @@ h1,h2,h3,h4,h5,h6{
 .link{
     color:var(--link-color);
 }
+i{
+    margin: 0 !important;
+    padding: 0 !important;
+}
 
+.flex-1{
+    flex:1;
+}
 .justify-content-between{
     justify-content:space-between;
 }
@@ -158,6 +186,9 @@ h1,h2,h3,h4,h5,h6{
 
 .align-items-center{
     align-items:center;
+}
+.text-align-center{
+    text-align: center;
 }
 
 table{
@@ -178,6 +209,7 @@ table thead th {
 
 table tbody tr {
     border-bottom:1px solid var(--border-color);
+    padding: 20px;
 }
 
 table tbody tr td {
@@ -280,6 +312,10 @@ img{
     margin-top:10px;
 }
 
+.m-l-10{
+    margin-left:10px;
+}
+
 .m-t-20{
     margin-top:20px;
 }
@@ -375,7 +411,9 @@ img{
 
 del{
     color: var(--black-color);
-    font-weight: var(--fw-800);
+    font-weight: var(--fw-400);
+    font-size:1rem;
+    margin-left:10px;
 }
 
 .off{
@@ -420,6 +458,14 @@ del{
 
 .active{
     color: var(--first-color) !important;
+}
+
+.bg{
+    background: var(--first-color) !important;
+}
+
+.white{
+    color: var(--white-color) !important;
 }
 
 .price{
@@ -733,7 +779,7 @@ select{
 }
 
 .header-main .container .wrapper .left .cat-content .cat-list li a i{
-    margin-right:10px;
+    margin-right:10px !important;
     font-size:0.8rem;
     text-transform:capitalize;
     font-weight: var(--fw-300);
@@ -746,7 +792,7 @@ select{
 }
 
 .header-main .container .wrapper .left .cat-content .cat-list li a .ri-arrow-right-s-line{
-    margin-left:auto;
+    margin-left:auto !important;
     font-size:0.8rem;
     text-transform:capitalize;
     font-weight: var(--fw-300);
@@ -768,7 +814,7 @@ select{
 .header-main .container .wrapper .left .cat-content .cat-list li .sub-item-content {
     position:absolute;
     top:0px;
-    left:272px;
+    left:250px;
     width:100%;
     box-shadow: 1px 1px 20px -10px var(--black-color);
     display:none;
@@ -832,6 +878,7 @@ select{
     animation: rotateX 300ms ease;
     z-index: 100;
     background: var(--white-color);
+    align-items: start;
 }
 
 .header-main .center nav a{
@@ -848,7 +895,7 @@ select{
     color:var(--black-color);
     font-weight:var(--fw-400);
     padding: 0 20px;
-    font-size:0.7rem;
+    font-size:1rem;
 }
 
 .header-main .center .sub-item-content a:hover{
@@ -951,7 +998,7 @@ select{
     background:var(--first-color);
     position:absolute;
     top:0px;
-    right:8px;
+    right:0px;
     width:22px;
     height:22px;
     border-radius:50%;
@@ -1358,7 +1405,6 @@ select{
     font-weight:var(--fw-300);
     transform: translateX(0%);
     animation: left_to_right 1s;
-    text-shadow: 2px 2px var(--white-color);
 }
 
 .carousel .content-slide > h2{
@@ -1366,7 +1412,6 @@ select{
    text-transform:capitalize;
    font-weight:var(--fw-600);
    animation: left_to_right 1s;
-   text-shadow: 2px 2px var(--white-color);
 }
 
 .animated {
@@ -1489,21 +1534,23 @@ select{
 .trendings .item{
   max-width: 25%;
   min-width: 23%;
-  box-shadow: 0px 10px 15px var(--border-color);
   overflow: hidden;
-  border-radius: 10px;
   position: relative;
    scroll-snap-align: start;
 }
 
 .trendings .item .content{
-  padding: 0 10px;
+  padding: 10px 20px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
 }
 
 .trendings .item .content h2{
   text-transform: capitalize;
   font-size: 1rem;
-  font-weight: var(--fw-400);
+  font-weight: var(--fw-700);
 }
 
 .trendings .item .content div span{
@@ -1515,7 +1562,7 @@ select{
 }
 
 .trendings .item .content .ri-star-fill{
-  color: var(--silver-color);
+  color: var(--black-color);
 }
 
 .trendings .item .btn-actions{
@@ -1560,7 +1607,7 @@ select{
 }
 
 .trendings .btn-actions li a{
-    padding: 10px;
+    padding: 10px;  
     background: var(--white-color);
 }
 
@@ -1580,7 +1627,7 @@ select{
 
 
 .trendings .arrows ul{
-   gap: 40px;
+   gap: 10px;
    margin: 20px;
 }
 
@@ -1713,6 +1760,10 @@ footer .footer-nav-item:hover i{
     font-size: 2rem;
     transition: font-size 1s ease;
 }
+footer .social-link li{
+    margin-bottom:20px;
+}
+
 /*end of footer*/
 
 /*-----------------------------------*\
@@ -1877,7 +1928,7 @@ margin-top: 10px;
 }
 
 .products-list .item .content .ri-star-fill{
-  color: var(--silver-color);
+  color: var(--black-color);
 }
 
 .products .products-list .item .btn-actions{
@@ -1917,8 +1968,6 @@ margin-top: 10px;
   animation: show 400ms ease;
 }
 
-.products .products-list .btn-actions li {
-}
 
 .products .products-list .btn-actions li a{
     padding: 5px;
@@ -1933,7 +1982,6 @@ margin-top: 10px;
 .products .products-list .btn-actions li a:hover{
     color: var(--white-color);
     background: var(--first-color);
-    animation: rotate 1s ease;
 }
 
 /*----------------------
@@ -2017,6 +2065,10 @@ margin-top: 10px;
 
 .align-self-center{
     align-self:center;
+}
+
+tbody{
+    border: 1px solid var(--border-color);
 }
 
 .pro-details-quality{
@@ -2383,3 +2435,86 @@ margin-top: 10px;
     font-Weight:var(--fw-300);
 } 
 /* eend of checkout */
+
+
+
+/*----------------------
+    16- COMPARE
+-----------------------*/
+.compare-box table p ,.compare-box table span {
+    width:200px;
+    font-size:0.8rem;
+}
+
+.compare-box table div.colors {
+    width:200px;
+}
+
+
+/*----------------------
+    17- LOGIN
+-----------------------*/
+.login-box .login-container{
+    width: 400px;
+    background: var(--bg-second-color);
+    padding:20px;
+    box-shadow: 1px 10px 10px var(--black-color);
+    margin:20px;
+}
+
+.login-box .login-container span {
+    font-size:0.8rem;
+}
+
+.login-box .login-container p{
+    font-size:0.8rem;
+    padding:10px 0;
+}
+
+.login-box .login-container h6{
+    margin:20px 0;
+}
+
+.login-box .login-container .btn-icon{
+    margin-top:10px;
+}
+
+.login-box h1{
+    font-size:1rem;
+    font-weight:var(--fw-300);
+}
+
+/*----------------------
+    18- REGISTER
+-----------------------*/
+
+.register-box .register-container{
+    width: 400px;
+    background: var(--bg-second-color);
+    padding:20px;
+    box-shadow: 1px 10px 10px var(--black-color);
+    margin:20px;
+}
+
+.register-box .register-container span {
+    font-size:0.8rem;
+}
+
+.register-box .register-container p{
+    font-size:0.8rem;
+    padding:10px 0;
+}
+
+.register-box .register-container h6{
+    margin:20px 0;
+}
+
+.register-box .register-container .btn-icon{
+    margin-top:10px;
+}
+
+.register-box h1{
+    font-size:1rem;
+    font-weight:var(--fw-300);
+}
+

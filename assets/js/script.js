@@ -129,6 +129,7 @@ function setActiveImage(id) {
     element.classList.remove('active');
 
   });  
+
   
   document.querySelectorAll('.'+id).forEach(element => {
     
@@ -169,3 +170,22 @@ function setActiveTab(id) {
 $(':radio').change(function() {
   console.log('Note : ' + this.value);
 });
+
+
+/*
+  * Set Active Devise
+  * Header
+  * 
+ */
+
+function setActiveDevise(e) {
+
+  document.querySelectorAll('.devise-btn').forEach(element => {
+    
+    element.classList.remove('active');
+
+  }); 
+  
+  e.classList.toggle('active');
+
+}

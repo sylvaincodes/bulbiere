@@ -44,6 +44,42 @@
                     " - $" + $( "#slide" ).slider( "values", 1 ) );  
                  });  
               </script>  
+
+              <style>
+                        
+                        /*PRODUCT LIST GRID*/
+                        .products-list .item{
+                          display: flex;
+                          flex-direction: row;
+                          min-width: 100%;
+                          box-shadow: 0px 10px 15px var(--border-color);
+                          overflow: hidden;
+                          position: relative;
+                          opacity: .7;
+                        }
+                        
+                        .products-list .item:hover{
+                          transform: translateX(20px);
+                          transition: transform 500ms;
+                          cursor: pointer;
+                        }
+
+
+                        .products-list .item .content{
+                          display: flex;
+                          flex-direction: column;
+                          justify-content: space-between;
+                          padding: 10px 20px;
+                          max-width: 600px;
+                        }    
+
+                        .products-list .item .content p{
+                           font-size: .7rem;
+                           font-weight: var(--fw-300);
+                           color: var(--black-color);
+                        }
+
+              </style>
            
 </head>
 
@@ -646,13 +682,13 @@
 
                                                                 <div class="actions flex-row align-items-center">
                                                                        <a href="products.html">
-                                                                           <i class="icon-large fill ri-layout-grid-fill"></i>
+                                                                           <i class="icon-large fill_out ri-layout-grid-fill"></i>
                                                                        </a>
 
                                                                        <a href="./products-list-grid.html">
-                                                                         <i class="icon-large ri-layout-2-line fill_out"></i>
+                                                                         <i class="icon-large ri-layout-2-line fill"></i>
                                                                        </a>
-                                                                        
+
                                                                         <select class="">
                                                                         <option>Affichage</option> 
                                                                         <option>9</option> 
@@ -696,14 +732,16 @@
 
                                                                                 <div class="content">
                                                                                          <a href="../web/products-single.html">
-                                                                                                 <h2>Nike x MMW Baskets Zoom 004</h2>
+                                                                                                 <h2 >Nike x MMW Baskets Zoom 004</h2>
                                                                                          </a>
                                                                                         <div
-                                                                                                class="flex-row justify-content-between">
+                                                                                                class="flex-row p-y-10 justify-content-between">
                                                                                                 <span>$514$</span>
                                                                                                 <del>$571</del>
                                                                                                 <small class="off">-16%
                                                                                                         off</small>
+
+                                                                                               
                                                                                         </div>
                                                                                         <div>
                                                                                                 <i
@@ -714,6 +752,21 @@
                                                                                                         class="fill ri-star-line"></i>
                                                                                                 <i class="ri-star-line"></i>
                                                                                                 <i class="ri-star-line"></i>
+                                                                                        </div>
+                                                                                         <p>
+                                                                                                        Short Hooded Coat features a straight body, large pockets with button flaps, ventilation air holes, and a string detail along the hemline.
+                                                                                        </p>
+
+                                                                                        <div class="flex-row justify-content-between align-items-center">
+                                                                                                
+                                                                                                <a class="btn btn-hover p-x10"
+                                                                                                        href="#">Ajouter au panier</a>
+
+                                                                                                <a class="fill" title="favoris" href="#"><i
+                                                                                                                class="ri-heart-line"></i></a>
+
+                                                                                                <a class="fill" title="comparer" href="#"><i
+                                                                                                                class="ri-shuffle-line"></i></a>
                                                                                         </div>
                                                                                 </div>
 
@@ -748,14 +801,14 @@
                                                                                 </div>
 
                                                                                 <div class="content">
-                                                                                        <a href="../web/products-single.html">
-                                                                                                <h2>Nike x Baskets Air-Max Pre-Day</h2>
-                                                                                        </a>
+                                                                                         <a href="../web/products-single.html">
+                                                                                                 <h2 >Nike x Baskets Air-Force</h2>
+                                                                                         </a>
                                                                                         <div
-                                                                                                class="flex-row justify-content-between">
-                                                                                                <span>$134</span>
-                                                                                        
-                                                                                                
+                                                                                                class="flex-row p-y-10 justify-content-between">
+                                                                                                <span>$134$</span>
+                                                                                               
+                                                                                               
                                                                                         </div>
                                                                                         <div>
                                                                                                 <i
@@ -767,8 +820,22 @@
                                                                                                 <i class="ri-star-line"></i>
                                                                                                 <i class="ri-star-line"></i>
                                                                                         </div>
-                                                                                </div>
+                                                                                         <p>
+                                                                                                        Short Hooded Coat features a straight body, large pockets with button flaps, ventilation air holes, and a string detail along the hemline.
+                                                                                        </p>
 
+                                                                                        <div class="flex-row justify-content-between align-items-center">
+                                                                                                
+                                                                                                <a class="btn btn-hover p-x10"
+                                                                                                        href="#">Ajouter au panier</a>
+
+                                                                                                <a class="fill" title="favoris" href="#"><i
+                                                                                                                class="ri-heart-line"></i></a>
+
+                                                                                                <a class="fill" title="comparer" href="#"><i
+                                                                                                                class="ri-shuffle-line"></i></a>
+                                                                                        </div>
+                                                                                </div>
                                                                         </div>
                                                                          <div class="item">
                                                                                 <div class="image">
@@ -799,14 +866,15 @@
                                                                                         </ul>
                                                                                 </div>
 
-                                                                                <div class="content">
-                                                                                        <a href="../web/products-single.html">
-                                                                                                <h2>Nike Baskets Air-Force</h2>
-                                                                                        </a>
+                                                                               <div class="content">
+                                                                                         <a href="../web/products-single.html">
+                                                                                                 <h2 >Nike x Baskets Air-Max Pre-Day</h2>
+                                                                                         </a>
                                                                                         <div
-                                                                                                class="flex-row justify-content-between">
-                                                                                                <span>$113</span>
+                                                                                                class="flex-row p-y-10 justify-content-between">
+                                                                                                <span>$113$</span>
                                                                                                 
+
                                                                                                
                                                                                         </div>
                                                                                         <div>
@@ -818,6 +886,21 @@
                                                                                                         class="fill ri-star-line"></i>
                                                                                                 <i class="ri-star-line"></i>
                                                                                                 <i class="ri-star-line"></i>
+                                                                                        </div>
+                                                                                         <p>
+                                                                                                        Short Hooded Coat features a straight body, large pockets with button flaps, ventilation air holes, and a string detail along the hemline.
+                                                                                        </p>
+
+                                                                                        <div class="flex-row justify-content-between align-items-center">
+                                                                                                
+                                                                                                <a class="btn btn-hover p-x10"
+                                                                                                        href="#">Ajouter au panier</a>
+
+                                                                                                <a class="fill" title="favoris" href="#"><i
+                                                                                                                class="ri-heart-line"></i></a>
+
+                                                                                                <a class="fill" title="comparer" href="#"><i
+                                                                                                                class="ri-shuffle-line"></i></a>
                                                                                         </div>
                                                                                 </div>
 
@@ -850,16 +933,15 @@
                                                                                                 </li>
                                                                                         </ul>
                                                                                 </div>
-
-                                                                                <div class="content">
-                                                                                        <a href="../web/products-single.html">
-                                                                                                <h2>Nike x Supreme Baskets Air Force</h2>
-                                                                                        </a>
+<div class="content">
+                                                                                         <a href="../web/products-single.html">
+                                                                                                 <h2 >Nike x Supreme Baskets Air-Force</h2>
+                                                                                         </a>
                                                                                         <div
-                                                                                                class="flex-row justify-content-between">
+                                                                                                class="flex-row p-y-10 justify-content-between">
                                                                                                 <span>$161</span>
-                                                                                                
-                                                                                            
+                                                                                             
+                                                                                               
                                                                                         </div>
                                                                                         <div>
                                                                                                 <i
@@ -870,6 +952,21 @@
                                                                                                         class="fill ri-star-line"></i>
                                                                                                 <i class="ri-star-line"></i>
                                                                                                 <i class="ri-star-line"></i>
+                                                                                        </div>
+                                                                                         <p>
+                                                                                                        Short Hooded Coat features a straight body, large pockets with button flaps, ventilation air holes, and a string detail along the hemline.
+                                                                                        </p>
+
+                                                                                        <div class="flex-row justify-content-between align-items-center">
+                                                                                                
+                                                                                                <a class="btn btn-hover p-x10"
+                                                                                                        href="#">Ajouter au panier</a>
+
+                                                                                                <a class="fill" title="favoris" href="#"><i
+                                                                                                                class="ri-heart-line"></i></a>
+
+                                                                                                <a class="fill" title="comparer" href="#"><i
+                                                                                                                class="ri-shuffle-line"></i></a>
                                                                                         </div>
                                                                                 </div>
 
@@ -903,14 +1000,13 @@
                                                                                 </div>
 
                                                                                 <div class="content">
-                                                                                        <a href="../web/products-single.html">
-                                                                                                <h2>Nike x Supreme Baskets Air Force</h2>
-                                                                                        </a>
+                                                                                         <a href="../web/products-single.html">
+                                                                                                 <h2 >Nike x Supreme Baskets Air Force 2</h2>
+                                                                                         </a>
                                                                                         <div
-                                                                                                class="flex-row justify-content-between">
+                                                                                                class="flex-row p-y-10 justify-content-between">
                                                                                                 <span>$161</span>
                                                                                                 
-                                                                                            
                                                                                         </div>
                                                                                         <div>
                                                                                                 <i
@@ -921,6 +1017,21 @@
                                                                                                         class="fill ri-star-line"></i>
                                                                                                 <i class="ri-star-line"></i>
                                                                                                 <i class="ri-star-line"></i>
+                                                                                        </div>
+                                                                                         <p>
+                                                                                                        Short Hooded Coat features a straight body, large pockets with button flaps, ventilation air holes, and a string detail along the hemline.
+                                                                                        </p>
+
+                                                                                        <div class="flex-row justify-content-between align-items-center">
+                                                                                                
+                                                                                                <a class="btn btn-hover p-x10"
+                                                                                                        href="#">Ajouter au panier</a>
+
+                                                                                                <a class="fill" title="favoris" href="#"><i
+                                                                                                                class="ri-heart-line"></i></a>
+
+                                                                                                <a class="fill" title="comparer" href="#"><i
+                                                                                                                class="ri-shuffle-line"></i></a>
                                                                                         </div>
                                                                                 </div>
 
@@ -955,13 +1066,17 @@
                                                                                 </div>
 
                                                                                 <div class="content">
-                                                                                        <a href="../web/products-single.html">
-                                                                                                <h2>ABU60 MIRATO CuirMarronGold</h2>
-                                                                                        </a>
+                                                                                         <a href="../web/products-single.html">
+                                                                                                 <h2 >ABUGO mirato Cuir Marron Gold</h2>
+                                                                                         </a>
                                                                                         <div
-                                                                                                class="flex-row justify-content-between">
-                                                                                                <span>100.80$</span>
-                                                                                                <del>129$</del>
+                                                                                                class="flex-row p-y-10 justify-content-between">
+                                                                                                <span>$100.80</span>
+                                                                                                <del>$129</del>
+                                                                                                <small class="off">-16%
+                                                                                                        off</small>
+
+                                                                                               
                                                                                         </div>
                                                                                         <div>
                                                                                                 <i
@@ -972,6 +1087,21 @@
                                                                                                         class="fill ri-star-line"></i>
                                                                                                 <i class="ri-star-line"></i>
                                                                                                 <i class="ri-star-line"></i>
+                                                                                        </div>
+                                                                                         <p>
+                                                                                                        Short Hooded Coat features a straight body, large pockets with button flaps, ventilation air holes, and a string detail along the hemline.
+                                                                                        </p>
+
+                                                                                        <div class="flex-row justify-content-between align-items-center">
+                                                                                                
+                                                                                                <a class="btn btn-hover p-x10"
+                                                                                                        href="#">Ajouter au panier</a>
+
+                                                                                                <a class="fill" title="favoris" href="#"><i
+                                                                                                                class="ri-heart-line"></i></a>
+
+                                                                                                <a class="fill" title="comparer" href="#"><i
+                                                                                                                class="ri-shuffle-line"></i></a>
                                                                                         </div>
                                                                                 </div>
 

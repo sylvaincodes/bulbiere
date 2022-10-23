@@ -1,60 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
+
 <head>
+        <title>Bulbiere - Acceuil</title>
         <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Bulbière - Les produits</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-           <!-- All css styles -->
-           <link href="../assets/css/animation.css" rel="stylesheet">
-           <link href="../assets/css/style.css" rel="stylesheet">
-           <link href="../assets/css/responsive.css" rel="stylesheet">
-   
-           <!-- all font css  -->
-           <link rel="preconnect" href="https://fonts.googleapis.com">
-           <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-           <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,400;0,700;0,900;1,100;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
-                   rel="stylesheet">
-   
-           <!-- remix icon -->
-           <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
-   
-           <!-- slider swipper cdn -->
-           <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+        <!-- All css styles -->
+        <link href="../assets/css/animation.css" rel="stylesheet">
+        <link href="../assets/css/style.css" rel="stylesheet">
+        <link href="../assets/css/responsive.css" rel="stylesheet">
 
-           <!-- jquery UI -->
-           <link href="https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">  
-              <script src="https://code.jquery.com/jquery-1.10.2.js"></script>  
-              <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>  
-              <!-- Javascript -->  
-              <script>  
-                 $(function() {  
-                    $( "#slide" ).slider({  
-                        orientation: "horizontal",                 
-                        range:true,  
-                       min: 0,  
-                       max: 1000,  
-                       values: [ 150, 350 ],  
-                       slide: function( event, ui ) {  
-                          $( "#price" ).val( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );  
-                       }  
-                   });  
-                 $( "#price" ).val( "$" + $( "#slide" ).slider( "values", 0 ) +  
-                    " - $" + $( "#slide" ).slider( "values", 1 ) );  
-                 });  
-              </script>  
+        <!-- all font css  -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,400;0,700;0,900;1,100;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+                rel="stylesheet">
 
+        <!-- remix icon -->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+        <!-- slider swipper cdn -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
 
 </head>
 
-
 <body>
 
+        <!----------------------
+        LA PAGE HOME 
+        -------------->
         <div class="site">
-                
 
-                <!-------------- 
+              <!-------------- 
                 HEADER CONTENT 
                 ---------------->
                 <header>
@@ -226,11 +204,12 @@
                                                 </div>
                                                 <div class="center">
                                                         <nav>
+                                                                
                                                                 <ul class="flexitem">
                                                                         <li><a href="../index.html">Acceuil</a></li>
-                                                                        <li><a href="#">produits</a>
+                                                                        <li><a href="./products.html">produits</a>
                                                                         </li>
-                                                                       <!--  <li><a class="flexitem"
+                                                                        <!--  <li><a class="flexitem"
                                                                                         href="#"><span>boutique</span>
                                                                                         <i
                                                                                                 class="ri-arrow-down-s-line"></i>
@@ -242,7 +221,8 @@
                                                                                 </div>
                                                                         </li> -->
                                                                         <li><a href="./blog.html">blog</a></li>
-                                                                        <li><a href="./contact.html">contact</a></li>
+                                                                        <li><a href="#">contact</a>
+                                                                        </li>
                                                                 </ul>
                                                         </nav>
                                                 </div>
@@ -491,503 +471,103 @@
                         <!-- end of header  fixed-->
                 </header>
 
+                <!-------------- 
+                MAIN CONTENT 
+                ---------------->
                 <main>
-                        <!-- Breadcrumbs -->
+                         <!-- Breadcrumbs -->
                         <section class="breadcrumbs">
                                 <div class="container">
                                         <div class="wrapper flex-row justify-content-between">
-                                                <h1>Produits</h1>
+                                                <h1>Contact</h1>
 
                                                 <ul class="flex-row justify-content-between">
-                                                        
-                                                <li>
-                                                        <a href="../index.html">Acceuil</a> 
-                                                </li>
-                                                <li> > </li>
 
-                                                <li><a href="#">Produits</a> </li>
+                                                        <li>
+                                                                <a href="../index.html">Acceuil</a>
+                                                        </li>
+                                                        <li> > </li>
+
+                                                        <li><a href="#">Contact</a> </li>
                                                 </ul>
 
                                         </div>
                                 </div>
                         </section>
+                        <!-- Breadcrumbs -->
 
-                        <!-- produits -->
-                        <section class="products">
-
+                        <!-- Contact -->
+                        <section class="map"> 
                                 <div class="container">
-
-                                        <div class="wrapper flex-row">
-                                                 <!-- produits sidebar -->
-                                               <div class="left">
-                                                     
-                                                        <ul class="flex-column">
-                                                                <li>Catégories de produits</li>
-                                                                <li> 
-                                                                        <a href="./products.html">
-                                                                                <i class="ri-arrow-right-s-line"></i> Tous les produits </li>
-                                                                        </a>
-
-                                                                <li> <a href="./products-single.html">
-                                                                        
-                                                                        <i class="ri-arrow-right-s-line"></i> Télévision <span class="m-l-auto">(6)</span> </li>
-                                                                </a> 
-                                                                <li> <a href="./products-single.html">
-
-                                                                        <i class="ri-arrow-right-s-line"></i> Mobile  <span>(6)</span> </li>
-                                                                </a> 
-                                                                <li> <a href="./products-single.html">
-
-                                                                        <i class="ri-arrow-right-s-line"></i> Casquette <span>(6)</span></li>
-                                                                </a> 
-                                                                <li> 
-                                                                        <a href="./products-single.html">
-
-                                                                                <i class="ri-arrow-right-s-line"></i> Montres <span>(6)</span></li>
-                                                                        </a>
-                                                        </ul> 
-
-
-                                                        <ul class="flex-column marques">
-                                                                <li>Marques</li>
-                                                                <li>  <input onchange="window.location.href='./products.html?marque=asus'" type="checkbox" name="select"> <span>Asus</span> <span>(6)</span></li>
-                                                                <li> <input onchange="window.location.href='./products.html?marque=dng'" type="checkbox" name="select"> <span>Dug</span> <span>(3)</span></li>
-                                                                <li> <input onchange="window.location.href='./products.html?marque=hurley'" type="checkbox" name="select"> <span>Hurley</span> <span>(1)</span></li>
-                                                                <li> <input onchange="window.location.href='./products.html?marque=oppo'" type="checkbox" name="select"> <span>Oppo</span> <span>(5)</span></li>
-                                                                <li> <input onchange="window.location.href='./products.html?marque=zarra'" type="checkbox" name="select"> <span>Zara</span> <span>(1)</span></li>
-                                                             
-                                                        </ul> 
-
-
-                                                        <ul class="flex-column">
-                                                                <li>Etiquettes de produit</li>
-                                                                <li> <input onchange="window.location.href='./products.html?et=it'" type="checkbox" name="select"> <span>Electronique</span> <span>(8)</span></li>
-                                                                <li> <input 
-                                                                onchange="window.location.href='./products.html?et=desk'"
-                                                                 type="checkbox" name="select"> <span>Bureau</span> <span>(1)</span></li>
-                                                                <li> <input onchange="window.location.href='./products.html?et=it'" type="checkbox" name="select"> <span>Auto</span> <span>(2)</span></li>
-                                                                <li> <input onchange="window.location.href='./products.html?et=mobile'" type="checkbox" name="select"> <span>Mobile</span> <span>(6)</span></li>
-                                                                <li> <input 
-                                                                        onchange="window.location.href='./products.html?et=it'" type="checkbox" name="select"> <span>IT</span> <span>(6)</span></li>
-                                                        </ul> 
-
-                                                        <ul class="flex-column">
-                                                                <li>Par prix</li>
-                                                                <li>
-                                                                        <div id="slide"></div>  
-                                                                      
-                                                                </li>
-
-                                                                <li class=""> 
-                                                                        <p>    
-                                                                         <input type="text" id="price"   
-                                                                            style="border:0; color:crimson; font-weight:bold;">  
-                                                                      </p>  
-
-                                                                </li>
-                                                        </ul>
-
-                                                         <ul class="flex-column colors">
-                                                                <li>Par couleur</li>
-                                                                <li class="colors">
-
-                                                                       <a  onclick="this.classList.toggle('active');" class="color red" title="rouge" href="javascript:void();">
-                                                                               
-                                                                       </a><a onclick="this.classList.toggle('active');" class="color yellow" href="javascript:void();" title="rouge">
-                                                                               
-                                                                       </a><a onclick="this.classList.toggle('active');" class="color blue active" href="javascript:void();" title="rouge">
-                                                                               
-                                                                       </a><a onclick="this.classList.toggle('active');" class="color orange" href="javascript:void();" title="rouge">
-                                                                               
-                                                                       </a>
-                                                                      
-                                                                </li>
-         
-                                                         </ul> 
-
-
-                                                         <ul class="flex-column">
-                                                                <li>Par taille</li>
-                                                                <li class="sizes">
-
-                                                                       <a  onclick="this.classList.toggle('active');" class="size" title="rouge" href="javascript:void();">S
-                                                                               
-                                                                       </a><a onclick="this.classList.toggle('active');" class="size " href="javascript:void();" title="rouge">M
-                                                                               
-                                                                       </a><a onclick="this.classList.toggle('active');" class="size  active" href="javascript:void();" title="rouge">L
-                                                                               
-                                                                       </a><a onclick="this.classList.toggle('active');" class="size " href="javascript:void();" title="rouge">XL
-                                                                               
-                                                                       </a><a onclick="this.classList.toggle('active');" class="size " href="javascript:void();" title="rouge">XXL
-                                                                               
-                                                                       </a>
-                                                                      
-                                                                </li>
-         
-                                                         </ul>
-
-                                               </div>
-
-                                                <!-- produits  -->
-                                               <div class="right">
-                                                      
-                                                      <div class="head flex-row align-items-center">
-                                                                <select>
-                                                                        <option>Default</option> 
-                                                                        <option>le plus récent</option> 
-                                                                        <option>le plus ancien</option> 
-                                                                        <option>prix croissant</option> 
-                                                                        <option>prix décroissant</option> 
-                                                                        <option>nom: A-Z</option> 
-                                                                        <option>nom: Z-A</option> 
-                                                                        <option>le plus ancien</option> 
-                                                                        <option>le plus ancien</option> 
-                                                                </select>
-
-
-                                                                <div class="actions flex-row align-items-center">
-                                                                       <a href="products.html">
-                                                                           <i class="icon-large fill ri-layout-grid-fill"></i>
-                                                                       </a>
-
-                                                                       <a href="./products-list-grid.html">
-                                                                         <i class="icon-large ri-layout-2-line fill_out"></i>
-                                                                       </a>
-                                                                        
-                                                                        <select class="">
-                                                                        <option>Affichage</option> 
-                                                                        <option>9</option> 
-                                                                        <option>12</option> 
-                                                                        <option>18</option> 
-                                                                     
-                                                                        </select>
-
-                                                                </div>
-                                                      </div> 
-
-                                                      <div class="products-list flex-row wrap wrapper p-t-20">
-                                                                         <div class="item">
-                                                                                <div class="image">
-                                                                                        <img
-                                                                                                src="../assets/images/products/shoe1.jpg">
-                                                                                        <ul class="btn-actions">
-                                                                                                <li>
-                                                                                                        <a onclick="addFillCss(this);"
-                                                                                                                href="javascript:void(0);">
-                                                                                                                <i 
-                                                                                                                        class="ri-restart-line">
-
-                                                                                                                </i>
-                                                                                                        </a>
-                                                                                                </li>
-
-                                                                                                <li><a href=""> <i
-                                                                                                                        class="ri-shuffle-line"></i></a>
-                                                                                                </li>
-
-                                                                                                <li><a href=""> <i
-                                                                                                                        class="ri-search-line"></i></a>
-                                                                                                </li>
-
-                                                                                                <li><a href=""> <i
-                                                                                                                        class="ri-heart-line"></i></a>
-                                                                                                </li>
-                                                                                        </ul>
-                                                                                </div>
-
-                                                                                <div class="content">
-                                                                                         <a href="../web/products-single.html">
-                                                                                                 <h2>Nike x MMW Baskets Zoom 004</h2>
-                                                                                         </a>
-                                                                                        <div
-                                                                                                class="flex-row justify-content-between">
-                                                                                                <span>$514$</span>
-                                                                                                <del>$571</del>
-                                                                                                <small class="off">-16%
-                                                                                                        off</small>
-                                                                                        </div>
-                                                                                        <div>
-                                                                                                <i
-                                                                                                        class="fill ri-star-line"></i>
-                                                                                                <i
-                                                                                                        class="fill ri-star-line"></i>
-                                                                                                <i
-                                                                                                        class="fill ri-star-line"></i>
-                                                                                                <i class="ri-star-line"></i>
-                                                                                                <i class="ri-star-line"></i>
-                                                                                        </div>
-                                                                                </div>
-
-                                                                        </div>
-                                                                         <div class="item">
-                                                                                <div class="image">
-                                                                                        <img
-                                                                                                src="../assets/images/products/shoe2.jpg">
-                                                                                        <ul class="btn-actions">
-                                                                                                <li>
-                                                                                                        <a onclick="addFillCss(this);"
-                                                                                                                href="javascript:void(0);">
-                                                                                                                <i
-                                                                                                                        class="ri-restart-line">
-
-                                                                                                                </i>
-                                                                                                        </a>
-                                                                                                </li>
-
-                                                                                                <li><a href=""> <i
-                                                                                                                        class="ri-shuffle-line"></i></a>
-                                                                                                </li>
-
-                                                                                                <li><a href=""> <i
-                                                                                                                        class="ri-search-line"></i></a>
-                                                                                                </li>
-
-                                                                                                <li><a href=""> <i
-                                                                                                                        class="ri-heart-line"></i></a>
-                                                                                                </li>
-                                                                                        </ul>
-                                                                                </div>
-
-                                                                                <div class="content">
-                                                                                        <a href="../web/products-single.html">
-                                                                                                <h2>Nike x Baskets Air-Max Pre-Day</h2>
-                                                                                        </a>
-                                                                                        <div
-                                                                                                class="flex-row justify-content-between">
-                                                                                                <span>$134</span>
-                                                                                        
-                                                                                                
-                                                                                        </div>
-                                                                                        <div>
-                                                                                                <i
-                                                                                                        class="fill ri-star-line"></i>
-                                                                                                <i
-                                                                                                        class="fill ri-star-line"></i>
-                                                                                                <i
-                                                                                                        class="fill ri-star-line"></i>
-                                                                                                <i class="ri-star-line"></i>
-                                                                                                <i class="ri-star-line"></i>
-                                                                                        </div>
-                                                                                </div>
-
-                                                                        </div>
-                                                                         <div class="item">
-                                                                                <div class="image">
-                                                                                        <img
-                                                                                                src="../assets/images/products/shoe3.jpg">
-                                                                                        <ul class="btn-actions">
-                                                                                                <li>
-                                                                                                        <a onclick="addFillCss(this);"
-                                                                                                                href="javascript:void(0);">
-                                                                                                                <i
-                                                                                                                        class="ri-restart-line">
-
-                                                                                                                </i>
-                                                                                                        </a>
-                                                                                                </li>
-
-                                                                                                <li><a href=""> <i
-                                                                                                                        class="ri-shuffle-line"></i></a>
-                                                                                                </li>
-
-                                                                                                <li><a href=""> <i
-                                                                                                                        class="ri-search-line"></i></a>
-                                                                                                </li>
-
-                                                                                                <li><a href=""> <i
-                                                                                                                        class="ri-heart-line"></i></a>
-                                                                                                </li>
-                                                                                        </ul>
-                                                                                </div>
-
-                                                                                <div class="content">
-                                                                                        <a href="../web/products-single.html">
-                                                                                                <h2>Nike Baskets Air-Force</h2>
-                                                                                        </a>
-                                                                                        <div
-                                                                                                class="flex-row justify-content-between">
-                                                                                                <span>$113</span>
-                                                                                                
-                                                                                               
-                                                                                        </div>
-                                                                                        <div>
-                                                                                                <i
-                                                                                                        class="fill ri-star-line"></i>
-                                                                                                <i
-                                                                                                        class="fill ri-star-line"></i>
-                                                                                                <i
-                                                                                                        class="fill ri-star-line"></i>
-                                                                                                <i class="ri-star-line"></i>
-                                                                                                <i class="ri-star-line"></i>
-                                                                                        </div>
-                                                                                </div>
-
-                                                                        </div>
-                                                                         <div class="item">
-                                                                                <div class="image">
-                                                                                        <img
-                                                                                                src="../assets/images/products/shoe4.jpg">
-                                                                                        <ul class="btn-actions">
-                                                                                                <li>
-                                                                                                        <a onclick="addFillCss(this);"
-                                                                                                                href="javascript:void(0);">
-                                                                                                                <i
-                                                                                                                        class="ri-restart-line">
-
-                                                                                                                </i>
-                                                                                                        </a>
-                                                                                                </li>
-
-                                                                                                <li><a href=""> <i
-                                                                                                                        class="ri-shuffle-line"></i></a>
-                                                                                                </li>
-
-                                                                                                <li><a href=""> <i
-                                                                                                                        class="ri-search-line"></i></a>
-                                                                                                </li>
-
-                                                                                                <li><a href=""> <i
-                                                                                                                        class="ri-heart-line"></i></a>
-                                                                                                </li>
-                                                                                        </ul>
-                                                                                </div>
-
-                                                                                <div class="content">
-                                                                                        <a href="../web/products-single.html">
-                                                                                                <h2>Nike x Supreme Baskets Air Force</h2>
-                                                                                        </a>
-                                                                                        <div
-                                                                                                class="flex-row justify-content-between">
-                                                                                                <span>$161</span>
-                                                                                                
-                                                                                            
-                                                                                        </div>
-                                                                                        <div>
-                                                                                                <i
-                                                                                                        class="fill ri-star-line"></i>
-                                                                                                <i
-                                                                                                        class="fill ri-star-line"></i>
-                                                                                                <i
-                                                                                                        class="fill ri-star-line"></i>
-                                                                                                <i class="ri-star-line"></i>
-                                                                                                <i class="ri-star-line"></i>
-                                                                                        </div>
-                                                                                </div>
-
-                                                                        </div><div class="item">
-                                                                                <div class="image">
-                                                                                        <img
-                                                                                                src="../assets/images/products/shoe1-2.jpg">
-                                                                                        <ul class="btn-actions">
-                                                                                                <li>
-                                                                                                        <a onclick="addFillCss(this);"
-                                                                                                                href="javascript:void(0);">
-                                                                                                                <i
-                                                                                                                        class="ri-restart-line">
-
-                                                                                                                </i>
-                                                                                                        </a>
-                                                                                                </li>
-
-                                                                                                <li><a href=""> <i
-                                                                                                                        class="ri-shuffle-line"></i></a>
-                                                                                                </li>
-
-                                                                                                <li><a href=""> <i
-                                                                                                                        class="ri-search-line"></i></a>
-                                                                                                </li>
-
-                                                                                                <li><a href=""> <i
-                                                                                                                        class="ri-heart-line"></i></a>
-                                                                                                </li>
-                                                                                        </ul>
-                                                                                </div>
-
-                                                                                <div class="content">
-                                                                                        <a href="../web/products-single.html">
-                                                                                                <h2>Nike x Supreme Baskets Air Force</h2>
-                                                                                        </a>
-                                                                                        <div
-                                                                                                class="flex-row justify-content-between">
-                                                                                                <span>$161</span>
-                                                                                                
-                                                                                            
-                                                                                        </div>
-                                                                                        <div>
-                                                                                                <i
-                                                                                                        class="fill ri-star-line"></i>
-                                                                                                <i
-                                                                                                        class="fill ri-star-line"></i>
-                                                                                                <i
-                                                                                                        class="fill ri-star-line"></i>
-                                                                                                <i class="ri-star-line"></i>
-                                                                                                <i class="ri-star-line"></i>
-                                                                                        </div>
-                                                                                </div>
-
-                                                                        </div>
-                                                                         <div class="item">
-                                                                                <div class="image">
-                                                                                        <img
-                                                                                                src="../assets/images/products/shoe1-1.jpg">
-                                                                                        <ul class="btn-actions">
-                                                                                                <li>
-                                                                                                        <a onclick="addFillCss(this);"
-                                                                                                                href="javascript:void(0);">
-                                                                                                                <i
-                                                                                                                        class="ri-restart-line">
-
-                                                                                                                </i>
-                                                                                                        </a>
-                                                                                                </li>
-
-                                                                                                <li><a href=""> <i
-                                                                                                                        class="ri-shuffle-line"></i></a>
-                                                                                                </li>
-
-                                                                                                <li><a href=""> <i
-                                                                                                                        class="ri-search-line"></i></a>
-                                                                                                </li>
-
-                                                                                                <li><a href=""> <i
-                                                                                                                        class="ri-heart-line"></i></a>
-                                                                                                </li>
-                                                                                        </ul>
-                                                                                </div>
-
-                                                                                <div class="content">
-                                                                                        <a href="../web/products-single.html">
-                                                                                                <h2>ABU60 MIRATO CuirMarronGold</h2>
-                                                                                        </a>
-                                                                                        <div
-                                                                                                class="flex-row justify-content-between">
-                                                                                                <span>100.80$</span>
-                                                                                                <del>129$</del>
-                                                                                        </div>
-                                                                                        <div>
-                                                                                                <i
-                                                                                                        class="fill ri-star-line"></i>
-                                                                                                <i
-                                                                                                        class="fill ri-star-line"></i>
-                                                                                                <i
-                                                                                                        class="fill ri-star-line"></i>
-                                                                                                <i class="ri-star-line"></i>
-                                                                                                <i class="ri-star-line"></i>
-                                                                                        </div>
-                                                                                </div>
-
-                                                                        </div>
-                                                      </div>
-
-                                               </div>
-
+                                        <div class="wrapper">
+                                                <div id="map">
+                                                        
+                                                </div>
                                         </div>
-                                        
                                 </div>
                         </section>
-         
+
+                        <section class="contact-content">
+                                <div class="container">
+                                        <div class="wrapper flex-row gap-10">
+                                                <div class="left col-md-3 bg-gray">
+                                                        <div class="top flex-column">
+                                                                <div class="flex-row align-items-center p-y-20">
+                                                                        <i class="ri-phone-fill btn-icon" ></i>
+                                                                        <div class="flex-column m-l-10">
+                                                                                <p>+012 546 55457</p>
+                                                                                <p>+012 546 55457</p>
+                                                                        </div>
+                                                                </div><div class="flex-row align-items-center p-y-20">
+                                                                        <i class="ri-globe-fill btn-icon" ></i>
+                                                                        <div class="flex-column m-l-10">
+                                                                                <p>bulbiere@gmail.com</p>
+                                                                                <p>bulbiere.com</p>
+                                                                        </div>
+                                                                </div><div class="flex-row align-items-center p-y-20">
+                                                                        <i class="ri-map-fill btn-icon" ></i>
+                                                                        <div class="flex-column m-l-10 ">
+                                                                                <p>Adresse ici</p>
+                                                                                <p>France , Paris</p>
+                                                                        </div>
+                                                                </div>
+                                                        </div>
+
+                                                        <div class="bottom">
+                                                                <h2>Nous suivre</h2>
+                                                                <ul class="flex-row justify-content-center">
+                                                                        <li> <a href=""> <i class="btn-icon ri-facebook-line"></i> </a> </li>
+                                                                        <li> <a href=""> <i class="btn-icon ri-instagram-line"></i> </a> </li>
+                                                                </ul>
+                                                        </div>
+                                                </div>  
+
+                                                <div class="right col-md-9 bg-gray">
+                                                        <h2>Nous écrire</h2>
+                                                        
+                                                                <input  type="text" name="name" placeholder="Votre nom">
+                                                               
+
+                                                                <input  type="text" name="email" placeholder="Votre email">
+                                                              
+                                         
+
+                                                                <input class="col-md-12" type="text" name="subject" placeholder="Titre">
+
+                                                                <textarea cols="93" rows="20">  
+                                                                        
+                                                                </textarea>
+
+                                                                 <input class="btn btn-style" type="submit" value="Envoyer">
+
+                                                </div>
+                                        </div>
+                                </div>
+                        </section>
+
+
+
                 </main>
- 
 
                 <!-------------- 
                 FOOTER CONTENT 
@@ -1170,7 +750,7 @@
                         <div class="footer-bottom">
                                 <div class="container">
                                         <div class="wrapper flex-row justify-content-between align-items-center p-20">
-                                                <img src="./assets/images/icons/payment.png" alt="payment method"
+                                                <img src="../assets/images/icons/payment.png" alt="payment method"
                                                         class="payment-img">
                                                 <p class="copyright">
                                                         Copyright &copy; <a href="#">Bulbiere</a> Tous droits réservés.
@@ -1182,11 +762,207 @@
 
                 </footer>
 
-</div>
+        </div>
 
-  <!-- Jquery UI js -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-  <script src="../assets/js/script.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCGM-62ap9R-huo50hJDn05j3x-mU9151Y"></script>
+        <script>
+    function init() {
+        var mapOptions = {
+            zoom: 11,
+            scrollwheel: false,
+            center: new google.maps.LatLng(40.709896, -73.995481),
+            styles: 
+            [
+                {
+                    "featureType": "water",
+                    "elementType": "geometry",
+                    "stylers": [
+                        {
+                            "color": "#e9e9e9"
+                        },
+                        {
+                            "lightness": 17
+                        }
+                    ]
+                },
+                {
+                    "featureType": "landscape",
+                    "elementType": "geometry",
+                    "stylers": [
+                        {
+                            "color": "#f5f5f5"
+                        },
+                        {
+                            "lightness": 20
+                        }
+                    ]
+                },
+                {
+                    "featureType": "road.highway",
+                    "elementType": "geometry.fill",
+                    "stylers": [
+                        {
+                            "color": "#ffffff"
+                        },
+                        {
+                            "lightness": 17
+                        }
+                    ]
+                },
+                {
+                    "featureType": "road.highway",
+                    "elementType": "geometry.stroke",
+                    "stylers": [
+                        {
+                            "color": "#ffffff"
+                        },
+                        {
+                            "lightness": 29
+                        },
+                        {
+                            "weight": 0.2
+                        }
+                    ]
+                },
+                {
+                    "featureType": "road.arterial",
+                    "elementType": "geometry",
+                    "stylers": [
+                        {
+                            "color": "#ffffff"
+                        },
+                        {
+                            "lightness": 18
+                        }
+                    ]
+                },
+                {
+                    "featureType": "road.local",
+                    "elementType": "geometry",
+                    "stylers": [
+                        {
+                            "color": "#ffffff"
+                        },
+                        {
+                            "lightness": 16
+                        }
+                    ]
+                },
+                {
+                    "featureType": "poi",
+                    "elementType": "geometry",
+                    "stylers": [
+                        {
+                            "color": "#f5f5f5"
+                        },
+                        {
+                            "lightness": 21
+                        }
+                    ]
+                },
+                {
+                    "featureType": "poi.park",
+                    "elementType": "geometry",
+                    "stylers": [
+                        {
+                            "color": "#dedede"
+                        },
+                        {
+                            "lightness": 21
+                        }
+                    ]
+                },
+                {
+                    "elementType": "labels.text.stroke",
+                    "stylers": [
+                        {
+                            "visibility": "on"
+                        },
+                        {
+                            "color": "#ffffff"
+                        },
+                        {
+                            "lightness": 16
+                        }
+                    ]
+                },
+                {
+                    "elementType": "labels.text.fill",
+                    "stylers": [
+                        {
+                            "saturation": 36
+                        },
+                        {
+                            "color": "#333333"
+                        },
+                        {
+                            "lightness": 40
+                        }
+                    ]
+                },
+                {
+                    "elementType": "labels.icon",
+                    "stylers": [
+                        {
+                            "visibility": "off"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "transit",
+                    "elementType": "geometry",
+                    "stylers": [
+                        {
+                            "color": "#f2f2f2"
+                        },
+                        {
+                            "lightness": 19
+                        }
+                    ]
+                },
+                {
+                    "featureType": "administrative",
+                    "elementType": "geometry.fill",
+                    "stylers": [
+                        {
+                            "color": "#fefefe"
+                        },
+                        {
+                            "lightness": 20
+                        }
+                    ]
+                },
+                {
+                    "featureType": "administrative",
+                    "elementType": "geometry.stroke",
+                    "stylers": [
+                        {
+                            "color": "#fefefe"
+                        },
+                        {
+                            "lightness": 17
+                        },
+                        {
+                            "weight": 1.2
+                        }
+                    ]
+                }
+            ]
+        };
+        var mapElement = document.getElementById('map');
+        var map = new google.maps.Map(mapElement, mapOptions);
+        var marker = new google.maps.Marker({
+            position: new google.maps.LatLng(40.709896, -73.995481),
+            map: map,
+            icon: 'assets/img/icon-img/2.png',
+            animation:google.maps.Animation.BOUNCE,
+            title: 'Snazzy!'
+        });
+    }
+    google.maps.event.addDomListener(window, 'load', init);
+</script>
 
 </body>
+
 </html>

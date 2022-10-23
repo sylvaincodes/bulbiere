@@ -84,9 +84,14 @@ window.onscroll = function(){
     * quantity increase or decrease
     * product details page    
 */
+if (dec) {
+  dec.onclick =  decreseQty;
+}
 
-dec.onclick =  decreseQty;
-inc.onclick =  increaseQty;
+if (dec) {
+  inc.onclick =  increaseQty;
+}
+
 
 function decreseQty(){
 
@@ -102,15 +107,6 @@ function increaseQty(){
 }
 
 
-/*--
-    Magnific Popup
-    ------------------------*/
-    $('.img-popup').magnificPopup({
-      type: 'image',
-      gallery: {
-          enabled: true
-      }
-  });
 
 /*
   * set Activ image on produit single
@@ -165,11 +161,6 @@ function setActiveTab(id) {
   });
 
 }
-
-
-$(':radio').change(function() {
-  console.log('Note : ' + this.value);
-});
 
 
 /*

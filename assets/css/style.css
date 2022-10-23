@@ -14,6 +14,21 @@
     3-default css
     4-header 
     5-slider main
+    6-brands
+    7-trendings products
+    8-glutters
+    9-footer
+    10-products
+    11-single product
+    12-cart
+    13-checkout
+    14-compare
+    15-login
+    16-register
+    17-blog
+    18-single blog
+    19-contact
+
 
 -----------------------*/
 
@@ -86,7 +101,7 @@ html{
 }
 
 body{
-    font-family : var(--ff-poppins),cursive;
+    font-family : var(--ff-poppins),"Arial";
 }
 
 .flexitem{
@@ -108,8 +123,13 @@ li{
 
 a{
     text-decoration:none;
-    color:var(--black);
+    color:var(--black-color);
 }
+
+a:hover{
+    color:var(--first-color);
+}
+
 .container{
     width: 100%;
     max-width:1200px;
@@ -222,6 +242,10 @@ table thead th ,table tbody tr td {
    padding:10px;
 }
 
+h2{
+    margin: 10px 0;
+}
+
 .ri-close-line{
     padding:10px;
     cursor:pointer;
@@ -273,10 +297,37 @@ table thead th ,table tbody tr td {
     padding-top:20px;
 }
 
-input,textarea{
-    padding: 10px;
-    width:auto !important;
+.col-md-6{
+    flex: 0 0 50%;
+    max-width: 50%;
 }
+
+
+.m-r-10{
+    margin-right: 10px;
+}
+
+.list-item{
+    gap: 10 ;
+    font-size: 0.8rem;
+}
+
+.list-item li{
+    gap: 10 ;
+    margin-right: 10px;
+    font-size: 0.8rem;
+}
+
+input{
+/*    border: 2px solid #eceff8;
+*/  
+    -webkit-box-shadow: none; 
+    box-shadow: none;
+    padding-left: 10px;
+    font-size: 14px;
+    color: #333;
+}
+
 
 .btn-round{
     border-radius:10px;
@@ -537,6 +588,20 @@ select{
     margin:20px 0;
 }
 
+
+.round-span:hover{
+    color: var(--white-color);
+    background: var(--first-color);
+    cursor: pointer;
+}
+
+.round-span{
+     padding: 5px 10px;
+    border-radius: 10px;
+    background: var(--silver-color);
+    font-size: 0.8rem;
+}
+
 /*----------------------
     4- HEADER
 -----------------------*/
@@ -585,9 +650,6 @@ select{
   margin-left:10px;
 }
 
-.header-top .right .active{
-  color:var(--first-color);
-}
 
 .header-top li:hover > a{
     color:var(--first-color);
@@ -656,6 +718,7 @@ select{
     left:50px;
     font-weight:var(--fw-400);
     text-transform:uppercase;
+    margin: 0 !important;
 }
 
 .header-search .container .wrapper .center {
@@ -676,8 +739,8 @@ select{
 }
 
 .header-search .container .wrapper .center .search-form select{
-    padding:20px 40px;
-    border:1px solid var(--border-color);
+/*    padding:20px 40px;
+*/    border:1px solid var(--border-color);
 }
 
 .header-search .container .wrapper .center .search-form select option{
@@ -807,12 +870,12 @@ select{
 }
 
 .header-main .container .wrapper .left .cat-content .cat-list > li:last-child a{
-  color:var(--first-color);
+  color:var(---color);
   font-weight:var(--fw-600);
 }
 
 .header-main .container .wrapper .left .cat-content .cat-list > li:last-child a:hover{
-  color:var(--white-color);
+  color:var(--white-color) !important;
 }
 
 .header-main .container .wrapper .left .cat-content .cat-list > li:last-child .ri-add-line{
@@ -955,6 +1018,12 @@ select{
     text-transform: capitalize;
 }
 
+
+#myHeader ul li a:hover{
+    color: var(--white-color);
+}
+
+
 .header-main .right .cart .products-list{
     max-height: 300px;
     overflow:auto;
@@ -1094,6 +1163,7 @@ select{
     font-weight:var(--fw-400);
     text-transform:uppercase;
     color:var(--white-color);
+    margin: 0!important;
 }
 
 
@@ -1671,6 +1741,7 @@ select{
 .trendings .arrows ul li p{
   text-align: center;
   color: var(--first-color);
+  margin-top: auto;
 }
 /*end of trending products*/
 
@@ -1716,7 +1787,7 @@ select{
 
 
 /*-----------------------------------*\
-  #FOOTER
+  9-FOOTER
 \*-----------------------------------*/
 
 footer {
@@ -1813,7 +1884,7 @@ main {
 
 
 /*-----------------------------------*\
-  12- LISTE DES PRODUITS
+  10- PRODUCTS
 \*-----------------------------------*/
 .products{
 
@@ -1978,8 +2049,6 @@ margin-top: 10px;
   height: 280px;
   object-fit: cover;
   position: relative;
-  opacity: .7;
-
 }
 
 .products .products-list .item img:hover{
@@ -1987,6 +2056,7 @@ margin-top: 10px;
   transform: scale(1.2);
   opacity: 1;
 }
+
 
 .products .products-list .item .image:hover .btn-actions {
   display: block;
@@ -2010,7 +2080,7 @@ margin-top: 10px;
 }
 
 /*----------------------
-    13- SINGLE PRODUCT
+    11- SINGLE PRODUCT
 -----------------------*/
 .product-details{
     
@@ -2376,7 +2446,7 @@ tbody{
 
 
 /*----------------------
-    14- CART
+    12- CART
 -----------------------*/  
 .cart{
 
@@ -2449,7 +2519,7 @@ tbody{
 
 
 /*----------------------
-    15- CHECKOUT
+    13- CHECKOUT
 -----------------------*/
 .checkout .right div{
     background:var(--bg-second-color);
@@ -2464,7 +2534,7 @@ tbody{
 
 
 /*----------------------
-    16- COMPARE
+    14- COMPARE
 -----------------------*/
 .compare-box table p ,.compare-box table span {
     width:200px;
@@ -2477,7 +2547,7 @@ tbody{
 
 
 /*----------------------
-    17- LOGIN
+    15- LOGIN
 -----------------------*/
 .login-box .login-container{
     width: 400px;
@@ -2510,7 +2580,7 @@ tbody{
 }
 
 /*----------------------
-    18- REGISTER
+    16- REGISTER
 -----------------------*/
 
 .register-box .register-container{
@@ -2543,3 +2613,239 @@ tbody{
     font-weight:var(--fw-300);
 }
 
+/*----------------------
+    17- BLOG
+-----------------------*/  
+.blog .container .left {
+    min-width: 300px;
+}
+
+
+.blog .search{
+    border: 2px solid #eceff8;  
+    -webkit-box-shadow: none; 
+    box-shadow: none;
+    padding-left: 10px;
+    font-size: 14px;
+    color: #333;
+    width: 100%;
+    height: 45px;
+}
+
+.blog .item p{
+    font-size: 0.7rem;
+    margin: 10px 0;
+    font-weight: var(--fw-300);    
+}
+
+
+.blog .container .left .sidebar-widget{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.blog .container .left .sidebar-widget h4{
+    font-size: 0.8rem;
+    font-weight: var(--fw-300);
+ /*   margin: 10px 0;*/
+}
+
+.blog .container  .left .search-container {
+    margin-top: 10px;
+}
+
+.blog .container  .left .search-container form{
+    position: relative;
+}
+
+.blog .container  .left .search-container input{
+    width: -webkit-fill-available;
+}
+
+.blog .container  .left .sidebar-widget{
+    margin-bottom: 40px;
+}
+
+.blog .container  .left .sidebar-widget .wrapper .item{
+    padding: 20px 0;
+    border-bottom: 1px solid silver;
+    width: auto;
+
+}
+
+.blog .container  .left .sidebar-widget .wrapper .item .content{
+   padding-left: 10px;
+}
+
+.blog .container  .left .sidebar-widget .wrapper .item .content h4{
+   font-weight: var(--fw-400);
+}
+
+.blog .container  .left .sidebar-widget .wrapper .item .content p{
+   font-weight: var(--fw-800);
+   font-size: 0.8rem;
+}
+
+
+
+.blog .container .left .search-container button{
+    position: absolute;
+    left: 243px;
+    top:15px;
+    background:transparent;
+    border-color:silver ;
+    padding: 0 15px;
+    color:var(--black-color);
+    border-style:none none none solid;
+    color:var(--black-color);
+}
+
+
+.blog .container .left .sidebar-widget li input{
+    margin-right: 10px;
+}
+
+.blog .container .left .sidebar-widget  {
+    margin-right: 10px;
+}
+
+.blog .container .left .sidebar-widget .tags {
+    gap: 10px;
+}
+
+.blog .container .right .wrapper {
+    margin: 40px 0 0 20px;
+    gap: 20px;
+}
+
+.blog .container .right .wrapper .item{
+    background: var(--white-color);
+    box-shadow: 0 10px 10px var(--silver-color);
+    max-width: 430px;
+    cursor: pointer;
+}
+
+.blog .container .right .wrapper .item .image-container{
+   overflow: hidden;
+   height: 240px;
+}
+
+.blog .container .right .wrapper .item img{
+    transform: scale(1);
+    transition: all 500ms ease;
+}
+
+.blog .container .right .wrapper .item img:hover{
+    transform: scale(1.1);
+    transition: all 500ms ease;
+}
+
+
+.blog .container .right .wrapper .item .content{
+    padding: 20px;
+}
+
+.blog .container .right .wrapper  > p{
+    color: var(--black-color);
+    font-size: 0.8rem;
+    font-weight: var(--fw-300);
+}
+
+.blog .container .right .wrapper  h2{
+    color: var(--black-color);
+    font-size: 1.3rem;
+    font-weight: var(--fw-700);
+}
+
+/*----------------------
+    18- SINGLE BLOG
+-----------------------*/  
+
+.blog.single .left {
+    max-width: 300px;
+}
+
+.blog.single .left {
+    max-width: 300px;
+}
+
+
+.blog.single :is(input,textarea) {
+    line-height: 40px;
+}
+
+
+.blog.single p {
+    color: var(--black-color);
+    font-size: 0.8rem;
+    font-weight: var(--fw-300);
+}
+
+/*----------------------
+    19- CONTACT
+-----------------------*/  
+
+.col-md-3{
+    flex: 0 0 33,333333%;
+    max-width: 33,33333%;
+}
+
+.col-md-9{
+    flex: 0 0 75%;
+    max-width: 75%;
+}
+
+
+.col-md-12{
+    flex: 0 0 100%;
+    width: 100%;
+}
+
+
+.contact-content .wrapper {
+    margin: 20px 0;
+}
+
+.contact-content p {
+    margin: 0 !important;
+    padding: 0 !important;
+    font-size: 0.7rem;
+    font-weight: var(--fw-300);
+}
+
+
+.contact-content .left {
+    padding: 120px 40px 116px 40px;
+}
+
+
+.contact-content .left .top{
+    margin: 40px 0;
+}
+
+
+.contact-content .right{
+    padding: 70px 70px 70px 70px;
+}
+
+
+.contact-content input{
+    line-height: 40px;
+    margin: 10px 0;
+    width: 100%;
+}
+
+
+.bg-gray{
+    background: #f3f3f3;
+}
+
+.m-l-10{
+    margin-left: 10px;
+}
+
+.m-l-20{
+    margin-left: 20px;
+}

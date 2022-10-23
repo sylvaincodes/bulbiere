@@ -35,6 +35,17 @@
     }
 }
 
+@keyframes decale {
+    from {
+        opacity: 7;
+        transform: translateX(0);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(50px);
+    }
+}
+
 @keyframes moveFromBottom {
     from {
         opacity: 0;

@@ -2460,6 +2460,10 @@ tbody{
     
 }
 
+.cart .container .wrapper  input{
+    line-height: 40px;
+}
+
 .cart .container .wrapper .table-cart {
     border-collapse: collapse;
     margin: 25px 0;
@@ -2529,6 +2533,12 @@ tbody{
     color:var(--black-color);
     font-Weight:var(--fw-300);
 } 
+
+.checkout   input{
+    line-height: 40px;
+}
+
+
 /* eend of checkout */
 
 

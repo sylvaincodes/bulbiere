@@ -71,6 +71,7 @@
     --icon-color: #e7e7e7;
     --bg2--color: #f7f7f7;
     --link--color: blue;
+    --box-shadow:rgba(0, 0, 0, 0.1);
 
     /* FONT WEIGHT */
     --fw-300 : 300;
@@ -117,8 +118,8 @@ ul{
     list-style:none;
 }
 
-li{
-
+input{
+    line-height: 40px;
 }
 
 a{
@@ -752,7 +753,7 @@ select{
 .header-search .container .wrapper .center .search-form i{ 
     position:absolute;
     right:10px;
-    top:8px;
+    top:20px;
 }
 
 .header-search .container .wrapper .right{ 
@@ -1596,11 +1597,12 @@ select{
 }
 
 .trendings .products{
-  gap: 25px;
+  gap: 15px;
   overflow: hidden;
   overscroll-behavior-inline: contain;
   scroll-snap-type: inline mandatory;
   padding: 10px;
+  flex-wrap: wrap;
 }
 
 .products.active {
@@ -1614,25 +1616,30 @@ select{
   min-width: 23%;
   overflow: hidden;
   position: relative;
-   scroll-snap-align: start;
+ scroll-snap-align: start;
+ box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+ transition: all 500ms ease;
 }
 
 .trendings .item .content{
   padding: 10px 20px;
   display:flex;
   flex-direction:column;
-  align-items:center;
-  justify-content:center;
 }
 
-.trendings .item .content h2{
+.trendings .item .content h3{
   text-transform: capitalize;
-  font-size: 1rem;
-  font-weight: var(--fw-700);
+  font-size: 1.3rem;
+  font-weight: var(--fw-300);
+  text-align: center;
 }
 
 .trendings .item .content div span{
   color: var(--first-color);
+}
+
+.trendings .item .content .rate-icon{
+  text-align: center;
 }
 
 .trendings .item .content div span{
@@ -1661,7 +1668,7 @@ select{
 }
 
 .trendings img{
-  width: 280px;
+  width: 300px;
   height: 280px;
   object-fit: cover;
   position: relative;
@@ -1994,10 +2001,11 @@ margin-top: 10px;
   }
 
 .products-list .item{
-  max-width: 280px;
-  box-shadow: 0px 10px 15px var(--border-color);
+  max-width: 284px;
+  box-shadow: 0px 2px 8px var(--box-shadow);
   overflow: hidden;
   position: relative;
+  transition: all 500ms ease;
 }
 
 .products-list .item .content{
@@ -2589,6 +2597,11 @@ tbody{
     font-weight:var(--fw-300);
 }
 
+.login-box input{
+  line-height: 40px;
+}
+
+
 /*----------------------
     16- REGISTER
 -----------------------*/
@@ -2621,6 +2634,10 @@ tbody{
 .register-box h1{
     font-size:1rem;
     font-weight:var(--fw-300);
+}
+
+.register-box input{
+ line-height: 40px;
 }
 
 /*----------------------
@@ -2728,6 +2745,7 @@ tbody{
 .blog .container .right .wrapper {
     margin: 40px 0 0 20px;
     gap: 20px;
+    
 }
 
 .blog .container .right .wrapper .item{
@@ -2735,6 +2753,7 @@ tbody{
     box-shadow: 0 10px 10px var(--silver-color);
     max-width: 430px;
     cursor: pointer;
+    transition:all 500ms ease;
 }
 
 .blog .container .right .wrapper .item .image-container{

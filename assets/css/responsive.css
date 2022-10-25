@@ -1,0 +1,104 @@
+/*------------------------- *\
+        RESPONSIVE CSS
+/*--------------------------*/
+
+/* 1-LAPTOP MEDIUM */
+@media only screen and (min-width:991px) and (max-width:1199px){
+    .container{
+        max-width: 991px;
+    }
+
+
+    /* Home page  Trending product */
+    .trendings .item{
+        min-width: 32%;
+    }   
+    
+    .trendings .products .item .image{
+        width: 100%;
+    } 
+    
+
+    .trendings .products .item img{
+    }
+
+
+    /* Blog Page  */
+    .blog .container .right .wrapper .item {
+        max-width: 325px;
+    }   
+    
+    .blog .wrapper .item .img{
+        width: 100%;
+        height:300px;
+    }
+
+    /* Products Page  */
+    .products-list .item{
+        max-width: 380px;
+      }   
+
+      .products .products-list img{
+        width: 100%;
+      }
+      
+      .products-list .item .image{
+        width: 330px;
+      }  
+      
+      /* Contact page  */
+      textarea{
+        width: -webkit-fill-available;
+      }
+
+      /* Product details */
+        .pro-details-quality{
+            flex-wrap: wrap;
+        }
+
+        .add-to-cart{
+            margin-left: 0;
+            margin-top: 10px;
+        }
+
+        .tab3 .right {
+            padding: 0 20px;
+        }
+
+        /* Blog Single  */
+        .single .container img{
+            width:min-content;
+        }
+
+
+        /* Cart */
+        .continue-shopping{
+            font-size:0.6rem;
+            padding:5px 10px;
+        }
+
+        .cart .inventory {
+            gap:10px;
+        }
+}
+
+/* 2-TABLETTE */
+@media only screen and (min-width:768px) and (max-width:991px){
+    .container{
+        max-width: 768px;
+    }
+}
+
+/* 3-MOBILE LARGE */
+@media only screen and (min-width:575px) and (max-width:768px){
+    .container{
+        max-width: 575px;
+    }
+}
+
+/* 4-MOBILE MEDIUM */
+@media only screen and (min-width:360px) and (max-width:575px){
+    .container{
+        max-width: 360px;
+    }
+}

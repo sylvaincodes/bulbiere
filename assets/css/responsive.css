@@ -87,6 +87,20 @@
     .container{
         max-width: 768px;
     }
+
+   /* Home page */
+   .header-search .right{
+    display:none;
+   }
+
+   .trendings .item{
+    min-width:31%;
+   }
+
+   footer p{
+    font-size:0.8rem;
+   }
+
 }
 
 /* 3-MOBILE LARGE */

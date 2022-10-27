@@ -675,6 +675,10 @@
     
     .blog.single .tab3 {
         width: 100%;
+    }      
+    
+    .blog.single .tab3 .form-group input, textarea {
+        width: 340px;
     }   
     
 

@@ -623,7 +623,7 @@
         display: none;
     }  
     
-    .blog .right{
+    .blog .all .right{
         width: 100%;
     }  
     
@@ -644,7 +644,7 @@
 
     .blog.single .right .wrapper{
         margin: 0 !important;
-        flex-direction: row;
+        flex-direction: column;
         flex-wrap: wrap;
         overflow: auto hidden;
         scroll-snap-type: inline mandatory;

@@ -260,6 +260,7 @@ h2{
 
 .m-l-auto{
     margin-left:auto;
+    float: right;
 }
 
 .p-l-10{
@@ -1098,9 +1099,6 @@ select{
     z-index:1000;
 }
 
-.header-fixed .container {
-
-}
 
 .header-fixed .container .wrapper{
   flex-direction: row;
@@ -2877,4 +2875,12 @@ tbody{
 
 .m-l-20{
     margin-left: 20px;
+}
+
+.search-mobile{
+    display: none;   
+}
+
+.options-products-btn{
+    display: none;
 }

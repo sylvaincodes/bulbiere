@@ -65,6 +65,10 @@ function addFillCss(e) {
 // Get the header
 var header = document.getElementById("myHeader");
 var fixedHeader = document.getElementById("fixedHeader");
+var fixedHeaderMobile = document.getElementById("fixedHeaderMobile");
+var close_menu = document.getElementById("close-menu");
+var nav_mobile = document.getElementById("nav-mobile");
+var show_menu = document.getElementById("show-menu");
 
 // Get the offset position of the navbar
 var position = header.offsetTop;
@@ -73,12 +77,30 @@ var position = header.offsetTop;
 window.onscroll = function(){
   if (window.pageYOffset > position) {
       fixedHeader.style.visibility = 'visible';
+      fixedHeaderMobile.style.visibility = 'visible';
     }else{
       
       fixedHeader.style.animation = 'moveFromTop 600ms ease';
       fixedHeader.style.visibility = 'hidden';
+      fixedHeaderMobile.style.visibility = 'hidden';
   }
 }
+
+// Close the menu
+close_menu.onclick= function () {
+  nav_mobile.style.animation = 'fade 500ms ease';
+  setTimeout(() => {
+    nav_mobile.style.display = "none";
+  }, 300);
+}
+
+
+// Show the menu
+show_menu.onclick= function () {
+  nav_mobile.style.display = "block";
+  nav_mobile.style.animation = 'moveFromTop 600ms ease';
+}
+
 
 /* 
     * quantity increase or decrease
@@ -178,5 +200,21 @@ function setActiveDevise(e) {
   }); 
   
   e.classList.toggle('active');
+
+}
+
+
+/*
+  * Hide options 
+  * Product list
+  * 
+ */
+
+function hideoptions(e) {
+
+  e.onclick = function () {
+    document.getElementById('options-products').classList.toggle('show');  
+  }
+
 
 }

@@ -65,16 +65,23 @@ function addFillCss(e) {
 // Get the header
 var header = document.getElementById("myHeader");
 var fixedHeader = document.getElementById("fixedHeader");
+var nav_bottom = document.getElementById("nav-bottom");
 var fixedHeaderMobile = document.getElementById("fixedHeaderMobile");
 var close_menu = document.getElementById("close-menu");
-var nav_mobile = document.getElementById("nav-mobile");
 var show_menu = document.getElementById("show-menu");
+var nav_cat = document.getElementById("categorie-mobile");
+var close_cat = document.getElementById("close-cat");
+var nav_mobile = document.getElementById("nav-mobile");
+var show_cat = document.getElementById("show-cat");
+var site = document.getElementById("site");
 
 // Get the offset position of the navbar
 var position = header.offsetTop;
+var position_nav_bottom = nav_bottom.offsetTop;
 
 
 window.onscroll = function(){
+  // console.log(window.pageYOffset);
   if (window.pageYOffset > position) {
       fixedHeader.style.visibility = 'visible';
       fixedHeaderMobile.style.visibility = 'visible';
@@ -84,21 +91,43 @@ window.onscroll = function(){
       fixedHeader.style.visibility = 'hidden';
       fixedHeaderMobile.style.visibility = 'hidden';
   }
+
+  if (window.pageYOffset < 1) {
+    
+    nav_bottom.classList.remove('fade');
+
+  }else{ 
+
+    nav_bottom.classList.add('fade');
+    nav_bottom.style.animation = 'growDown 600ms ease';
+
+}
+  
 }
 
 // Close the menu
 close_menu.onclick= function () {
-  nav_mobile.style.animation = 'fade 500ms ease';
-  setTimeout(() => {
-    nav_mobile.style.display = "none";
-  }, 300);
+  nav_mobile.classList.remove('show');
+}
+
+
+// Close the menu
+close_cat.onclick= function () {
+  nav_cat.classList.remove('show');
+  site.style.opacity = '1';
 }
 
 
 // Show the menu
 show_menu.onclick= function () {
-  nav_mobile.style.display = "block";
-  nav_mobile.style.animation = 'moveFromTop 600ms ease';
+  nav_mobile.classList.add('show');
+}
+
+
+// Show the menu cat
+show_cat.onclick= function () {
+  nav_cat.classList.add('show');
+  site.style.opacity = '0.3';
 }
 
 

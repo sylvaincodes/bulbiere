@@ -46,12 +46,12 @@
                                                 </div>
                                                 <div class="right">
                                                         <ul class="flexitem">Devise :
-                                                                <li class="devise-btn" onclick="setActiveDevise(this);"></li>
-                                                                        <a class="active"
-                                                                                href="javascript:void();">USD</a></li>
+                                                                <li class="devise-btn" onclick="setActiveDevise(this);">
+                                                                </li>
+                                                                <a class="active" href="javascript:void();">USD</a></li>
                                                                 <li class="devise-btn" onclick="setActiveDevise(this);">
                                                                         <a href="javascript:void();">EUR</a>
-                                                                      </li>
+                                                                </li>
                                                                 <li class="devise-btn" onclick="setActiveDevise(this);">
                                                                         <a href="javascript:void();">XOF</a>
                                                                 </li>
@@ -1035,7 +1035,7 @@
                 <!----------------------
         NAV BOTTOM MOBILE 
         -------------->
-                <div class="nav-bottom" >
+                <div class="nav-bottom">
                         <div class="container">
                                 <div class="wrapper" id="nav-bottom">
                                         <div class="icon">
@@ -1049,6 +1049,8 @@
                                         <div class="icon">
                                                 <a class="flex-column" href="./web/cart.html">
                                                         <i class="ri-shopping-cart-line"></i>
+
+                                                        <span class="fly-item">0</span>
                                                         <span>Panier</span>
                                                 </a>
                                         </div>
@@ -1068,43 +1070,44 @@
                         <div class="container">
                                 <div class="wrapper">
                                         <form class="flex-row align-items-center">
-                                                <input id="search" type="search" pattern=".*\S.*" required placeholder="Rechercher ici" autofocus>
+                                                <input id="search" type="search" pattern=".*\S.*" required
+                                                        placeholder="Rechercher ici" autofocus>
                                                 <i class="ri-search-line"></i>
                                         </form>
                                 </div>
                         </div>
                 </div>
 
-        </div>  
-        
+        </div>
+
         <!--------------------  
             MENU NAV MOBILE
         -->
 
-                <div class="nav-mobile" id="nav-mobile">
-                        <div class="container">
-                                <div class="wrapper">
-                                      <i id="close-menu" class="btn-icon ri-close-line"></i>
-                                      <ul>
+        <div class="nav-mobile" id="nav-mobile">
+                <div class="container">
+                        <div class="wrapper">
+                                <i id="close-menu" class="btn-icon ri-close-line"></i>
+                                <ul>
                                         <li><a href="#">Acceuil</a></li>
                                         <li><a href="./web/products.html">Produits</a></li>
                                         <li><a href="./web/blog.html">Blog</a></li>
                                         <li><a href="./web/contact.html">Contact</a></li>
-                                      </ul>
+                                </ul>
 
-                                </div>
                         </div>
                 </div>
-
-        </div> 
-        
-     
+        </div>
 
         </div>
 
 
 
-           
+        </div>
+
+
+
+
         <!--------------------  
             CATEGORIES MOBILE
         -->
@@ -1121,8 +1124,7 @@
                                                 <a href="javascript:void()">
                                                         <i class="ri-tv-line"></i>
                                                         <span>Television</span>
-                                                        <i
-                                                                class="m-l-auto ri-arrow-right-s-line"></i>
+                                                        <i class="m-l-auto ri-arrow-right-s-line"></i>
 
                                                 </a>
 
@@ -1137,8 +1139,7 @@
                                         <li><a href="javascript:void()">
                                                         <i class="ri-phone-line"></i>
                                                         <span>Mobile</span>
-                                                        <i
-                                                                class="m-l-auto ri-arrow-right-s-line"></i>
+                                                        <i class="m-l-auto ri-arrow-right-s-line"></i>
                                                 </a>
                                                 <div class="sub-item-content">
                                                         <a href="">iphone</a>
@@ -1150,11 +1151,9 @@
                                         </li>
                                         <li>
                                                 <a href="javascript:void()">
-                                                        <i
-                                                                class="ri-headphone-line"></i>
+                                                        <i class="ri-headphone-line"></i>
                                                         <span>Casques</span>
-                                                        <i
-                                                                class="m-l-auto ri-arrow-right-s-line"></i>
+                                                        <i class="m-l-auto ri-arrow-right-s-line"></i>
                                                 </a>
                                                 <div class="sub-item-content">
                                                         <a href="">casque astro</a>
@@ -1190,7 +1189,7 @@
 
                                                 </a></li>
                                         <li><a href="#">
-                                                <i class="ri-add-line"></i>
+                                                        <i class="ri-add-line"></i>
                                                         <span>Plus de catégories</span>
                                                 </a></li>
                                 </ul>

@@ -79,6 +79,12 @@
     .cart .inventory {
         gap: 10px;
     }
+
+
+    /* Contact */
+    .contact-content .right{
+        max-width: 700px;
+    }
 }
 
 /* 2-TABLETTE */
@@ -87,6 +93,15 @@
         max-width: 768px;
     }
 
+
+    textarea{
+        width: 100%;
+    }
+
+    .image-box img{
+        width: 100%;
+        height: auto;
+    }
     /* Home page */
     .header-search .right {
         display: none;
@@ -116,6 +131,62 @@
 
     .trendings .products .item {
         min-width: 32.55%;
+    }
+
+
+    /* contact */
+    .contact-content  .wrapper{
+        flex-wrap: wrap;
+    } 
+    
+    .contact-content  .wrapper .left{
+        width:100%;
+    }  
+    
+    .contact-content  .wrapper .left .top{
+        flex-direction: row;
+        justify-content: center;
+        gap: 20px;
+    }    
+    
+    .contact-content  .wrapper .left h2{
+        text-align: center;
+    }
+
+
+    .related-products .wrapper{
+        overflow: auto hidden;
+        overscroll-behavior-inline: contain;
+        scroll-snap-type: inline mandatory;
+        flex-wrap: nowrap;
+        width: 100%;
+    }  
+    
+    .related-products .item{
+        min-width: 32.55%;
+     }
+
+     .blog.single .left{
+        display: none;
+        position: absolute;
+        left: 0;
+        top: 300px;
+        z-index: 1000;
+        background: var(--white-color);
+        padding: 20px;
+        box-shadow: var(--box-shadow) 10px 10px 10px ;
+     }
+
+     .blog.single .right img{
+        width: auto;
+     }
+
+     .sidebar-btn{
+        display: block;
+    }
+
+    .blog .container .left .search-container button{
+        left: 200px;
     }
 
 
@@ -201,6 +272,49 @@
 
     }
 
+
+    .related-products .content {
+        overflow: auto hidden;
+        overscroll-behavior-inline: contain;
+        scroll-snap-type: inline mandatory;
+        flex-wrap: nowrap;
+        width: 100%;
+    }
+    
+    .related-products .content .item {
+        min-width: 49%;
+        height: 300px;
+    }
+    
+    .related-products .content .item img {
+        width: auto;
+    }
+
+    .related-products .image:hover .btn-actions a:nth-child(2){
+        padding: 0 27px;
+    }
+
+
+    .product-details .wrapper {
+        flex-wrap: wrap;
+    }   
+
+    .blog .container .left {
+        min-width: 205px;
+    }
+
+    .blog .container .right .wrapper .item{
+        max-width: 350px;
+    }
+
+    .image-box img{
+        width: 100%;
+    }
+
+    .related-products .item{
+        /* min-width: 40%; */
+    }
+
 }
 
 /* 4-MOBILE MEDIUM */
@@ -218,8 +332,6 @@
         display: none;
     }  
     
-    footer{
-    }
     .header-top  {
         display: none;
     }
@@ -784,6 +896,70 @@
     
     .contact-content .wrapper .left .top{
         padding: 0 80px;
+    }
+
+    .icon .flex-column {
+        position: relative;
+    }
+
+    .fly-item{
+        color: var(--white-color);
+        background: var(--first-color);
+        position: absolute;
+        top: -7px;
+        right: 5px;
+        width: 22px;
+        height: 22px;
+        border-radius: 50%;
+        text-align: center;
+        font-size: 0.8rem;
+    }
+
+    .products-list .item .content{
+        padding: 10px 20px !important;
+    }
+
+
+    /* Product details */
+
+    .breadcrumbs .wrapper > h1{
+            font-size: 0.8rem;
+            display: none;
+    }
+    
+    .product-details .wrapper {
+        flex-wrap: wrap;
+    }   
+    
+    .product-details .wrapper .right{
+        padding:0;
+    }
+    
+    .image-box img{
+        width: 100%;
+        height: 300px;
+    }
+
+
+    .related-products .content {
+        overflow: auto hidden;
+        overscroll-behavior-inline: contain;
+        scroll-snap-type: inline mandatory;
+        flex-wrap: nowrap;
+        width: 100%;
+    }
+    
+    .related-products .content .item {
+        min-width: 49%;
+        height: 300px;
+    }
+    
+    .related-products .content .item img {
+        width: auto;
+    }
+
+    .related-products .image:hover .btn-actions a:nth-child(2){
+        padding: 0 27px;
     }
 
 }

@@ -150,7 +150,7 @@ h6 {
 }
 
 .btn {
-    padding: 15px 35px;
+    padding: 10px 15px;
     transition: all 0.3s ease-in-out 0s;
 }
 
@@ -342,6 +342,9 @@ h2 {
     font-size: 0.8rem;
 }
 
+#nav-mobile{
+    display: none;
+}
 input {
     /*    border: 2px solid #eceff8;
 */
@@ -2206,6 +2209,7 @@ tbody {
 .product-details .image-box {
     position: relative;
     display: none;
+    overflow: hidden;
 }
 
 .product-details .image-box img {
@@ -2447,6 +2451,7 @@ tbody {
     border-radius: 3px;
     padding: 2px 8px;
     font-size: 0.7rem;
+    width: auto;
 }
 
 .related-products .header {
@@ -2900,5 +2905,9 @@ tbody {
 }
 
 .options-products-btn {
+    display: none;
+}
+
+.sidebar-btn{
     display: none;
 }

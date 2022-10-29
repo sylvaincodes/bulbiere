@@ -5,7 +5,18 @@ const color = document.getElementsByClassName('color');
 const dec = document.getElementById('dec');
 const inc = document.getElementById('inc');
 const qty = document.getElementById('qty');
+const sidebar_btn = document.getElementById('sidebar-btn');
+const left = document.getElementById('left');
 
+
+/* 
+    *open sidebar blog single
+    *blog single
+*/
+
+sidebar_btn.onclick = function () {
+  left.classList.toggle('show');
+}
 
 /* 
     *initailiser le carousel slider swipper 

@@ -121,6 +121,11 @@ ul {
     list-style: none;
 }
 
+
+#sidebar-btn{
+    display: none;
+}
+
 input {
     line-height: 40px;
 }
@@ -2661,6 +2666,7 @@ tbody {
 -----------------------*/
 .blog .container .left {
     min-width: 300px;
+    max-width: 300px;
 }
 
 
@@ -2908,9 +2914,6 @@ tbody {
     display: none;
 }
 
-.sidebar-btn{
-    display: none;
-}
 
 .nav-bottom{
     display: none;

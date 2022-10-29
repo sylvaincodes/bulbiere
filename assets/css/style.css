@@ -2911,3 +2911,7 @@ tbody {
 .sidebar-btn{
     display: none;
 }
+
+.nav-bottom{
+    display: none;
+}

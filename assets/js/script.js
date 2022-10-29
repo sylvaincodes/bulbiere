@@ -14,10 +14,13 @@ const left = document.getElementById('left');
     *blog single
 */
 
-sidebar_btn.onclick = function () {
-  left.classList.toggle('show');
+if (sidebar_btn) {
+  
+  sidebar_btn.onclick = function () {
+    left.classList.toggle('show');   
+  }
+  
 }
-
 /* 
     *initailiser le carousel slider swipper 
     *page d'acceuil
